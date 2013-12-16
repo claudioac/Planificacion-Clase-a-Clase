@@ -7,11 +7,22 @@ class Eliminar_model extends CI_Model{
         
     }
     
-    public function consulta()
+    public function consulta($data)
     {
-        $query= $this->db->get('planificacion');
         
-        return $query;
+                $where = array ("rut" => $data);
+                $query = $this->db
+                ->select("*")
+                ->from ("planificacion")
+                ->where($where)
+                ->get();
+                return $query->result ();
+    }
+    public function eliminar_planificacion($codigo)
+    {
+                 $this->db
+                ->delete( "planificacion", array( "cod_clasificacion" => $codigo));
+                return true;
     }
     
 }

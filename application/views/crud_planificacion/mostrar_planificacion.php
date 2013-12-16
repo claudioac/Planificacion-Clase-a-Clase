@@ -8,7 +8,7 @@
 
 <h1 class="text-center page-header">Planificaciones</h1>
 
-<div class="form-inline">
+<div class="form-inline text-center">
 
 <?php $rut_profesor = array(
     'id' => 'rut_profesor',

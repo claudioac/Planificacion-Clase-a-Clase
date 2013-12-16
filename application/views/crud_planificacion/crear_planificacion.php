@@ -78,7 +78,7 @@
              <div class="span2 offset1" >
                  
     <?= form_label('Facultad: ','facultad')?>             
-    <select name="facultad" id="facultad">
+    <select required name="facultad" id="facultad">
         <option value="">Ingrese su facultad</option>
         <?php 
         foreach($facultades->result() as $fila)
@@ -91,23 +91,23 @@
         ?>        
     </select>
     <?= form_label('Departamento: ','departamento')?>
-     <select name="departamento" id="departamento" >
+     <select required name="departamento" id="departamento" >
          
          <option value="">Selecciona Departamento</option>
     </select>
     <?= form_label('Escuela: ','facultad')?>   
-    <select name="escuela" id="escuela" >
+    <select required name="escuela" id="escuela" >
             
             <option value="">Selecciona Escuela</option>
     </select>
    <?= form_label('Carrera : ','carrera')?>   
-    <select name="carrera" id="carrera" >
+    <select required name="carrera" id="carrera" >
        
         <option value="">Selecciona Carrera</option>
         
     </select>
     <?= form_label('Asignatura: ','asignatura')?>   
-    <select name="ramo" id="ramo" >
+    <select required name="ramo" id="ramo" >
        
         <option value="">Selecciona Asignatura</option>
         
@@ -116,15 +116,17 @@
              'id'=>'rut_profesor',
              'name'=>'rut_profesor',
              'placeholder'=>'12.345.678-9',
-             'class'=> 'required rut'
+             'required type'=> 'text'
          );
          $fecha=array(
              'name'=>'fecha',
              'type'=>'date',
+             'required type'=> 'date'
          );
          $semestre=array(
              'name'=>'semestre',
              'placeholder'=>'Número del Semestre',
+             'required type'=> 'text'
          );
          ?>
                  
@@ -167,7 +169,7 @@
     </div>
     
     <div class="text-center">
-        <?= anchor('index.php/crud_planificacion', 'Cancelar', array('class' => 'btn btn-danger'));?>  
+        <?= anchor('index.php/inicio', 'Cancelar', array('class' => 'btn btn-danger'));?>  
         <?=  form_submit('','Enviar','class="btn btn-primary"')?>
     </div>  
    
