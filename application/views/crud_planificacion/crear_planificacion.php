@@ -1,5 +1,5 @@
  <div class="jumbutron">
-    <h1 class="text-center page-header">Datos</h1>
+    <h1 class="text-center page-header">Datos Generales</h1>
     
     <script type="text/javascript">
         
@@ -142,7 +142,7 @@
                  
     <div class="span6 offset2 ">
            <?php   $objetivo=array(
-             'name'=>'objetivo',
+             'name'=>'objetivo',             
              'rows'=>'10',
              'class'=>'field span12'
              

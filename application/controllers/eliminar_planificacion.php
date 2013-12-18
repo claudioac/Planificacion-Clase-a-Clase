@@ -12,7 +12,7 @@ class Eliminar_planificacion extends CI_Controller {
         $this->load->library('table');
         $this->load->view('Header');
         
-        $this->load->view('crud_planificacion/eliminar_planificacion');
+        $this->load->view('eliminar_planificacion/eliminar_planificacion');
         $this->load->view('Footer');
         
         
@@ -32,14 +32,23 @@ class Eliminar_planificacion extends CI_Controller {
                         show_404();
                 }
                 $this->load->view('Header');
-                $this->load->view('crud_planificacion/eliminar2_planificacion',compact("query"));
+                $this->load->view('eliminar_planificacion/eliminar2_planificacion',compact("query"));
                 $this->load->view('Footer');
     }
     
-    public function eliminar()
+    public function eliminar($id)
     {
-         $codigo= $this->input->post('eliminar_planificacion');
-         $query = $this->eliminar_model->eliminar_planificacion($codigo);
+             if (!$id) {
+                        show_404 ();
+                }
+             else{   
+                $this->eliminar_model->eliminar_planificacion($id);
+                redirect(base_url("index.php/inicio"));
+             }
+        
+        
+//         $codigo= $this->input->post('eliminar_planificacion');
+//         $query = $this->eliminar_model->eliminar_planificacion($codigo);
          
          
     }
