@@ -51,55 +51,7 @@ class Paises extends CI_Controller {
         
         
 }
-        
-//public function codigopais($str)
-//{
-//
-//    // You can access $_POST variable
-//    $this->load->model('pais_model');
-//    $result =   $this->pais_model->codigoAvailability($_POST['codigopais']);
-//    if ($result)
-//    {
-//        $this->form_validation->set_message('codigopais', 'The %s already exists');
-//        return FALSE;
-//    }
-//    else
-//    
-//        return TRUE;
-//    
-//}
-//public function alfatres($str)
-//{
-//
-//    // You can access $_POST variable
-//    $this->load->model('pais_model');
-//    $result =   $this->pais_model->alfatresAvailability($_POST['alfatres']);
-//    if ($result)
-//    {
-//        $this->form_validation->set_message('alfatres', 'The %s already exists');
-//        return FALSE;
-//    }
-//    else
-//    
-//        return TRUE;
-//    
-//}
-//public function alfados($str)
-//{
-//
-//    // You can access $_POST variable
-//    $this->load->model('pais_model');
-//    $result =   $this->pais_model->alfadosAvailability($_POST['alfados']);
-//    if ($result)
-//    {
-//        $this->form_validation->set_message('alfados', 'The %s already exists');
-//        return FALSE;
-//    }
-//    else
-//    
-//        return TRUE;
-//    
-//}
+   
 
      public function eliminar($id)
      {
