@@ -22,10 +22,10 @@ class Paises extends CI_Controller {
         
         if($this->input->post())
         {
-            $this->form_validation->set_rules('codigopais', 'Codigo País', 'required|is_unique[paises.cod_num]');
-            $this->form_validation->set_rules('nombre', 'País', 'required');
-            $this->form_validation->set_rules('alfatres', 'Alfa 3', 'required|exact_length[3]|is_unique[paises.alfa_tres]');
-            $this->form_validation->set_rules('alfados', 'Alfa 2', 'required|exact_length[2]|is_unique[paises.alfa_dos]');
+            $this->form_validation->set_rules('codigopais', 'Codigo País', 'required|is_natural|is_unique[paises.cod_num]');
+            $this->form_validation->set_rules('nombre', 'País', 'required|alpha|is_unique[paises.nombre]');
+            $this->form_validation->set_rules('alfatres', 'Alfa 3', 'required|exact_length[3]|alpha|is_unique[paises.alfa_tres]');
+            $this->form_validation->set_rules('alfados', 'Alfa 2', 'required|exact_length[2]|alpha|is_unique[paises.alfa_dos]');
             
             if($this->form_validation->run())
             {
@@ -120,10 +120,10 @@ class Paises extends CI_Controller {
         }
          if($this->input->post())
          {
-            $this->form_validation->set_rules('codigopais', 'Codigo País', 'required|numeric|is_unique[paises.cod_num]');
-            $this->form_validation->set_rules('nombre', 'País', 'required|is_unique[paises.nombre]');
-            $this->form_validation->set_rules('alfatres', 'Alfa 3', 'required|exact_length[3]|is_unique[paises.alfa_tres]');
-            $this->form_validation->set_rules('alfados', 'Alfa 2', 'required|exact_length[2]|is_unique[paises.alfa_dos]');
+            $this->form_validation->set_rules('codigopais', 'Codigo País', 'required|is_natural');
+            $this->form_validation->set_rules('nombre', 'País', 'required|alpha');
+            $this->form_validation->set_rules('alfatres', 'Alfa 3', 'required|alpha|exact_length[3]');
+            $this->form_validation->set_rules('alfados', 'Alfa 2', 'required|alpha|exact_length[2]');
              if($this->form_validation->run())
              {
              $data = array(
