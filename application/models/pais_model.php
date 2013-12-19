@@ -42,24 +42,7 @@ class Pais_model extends CI_Model{
                 return true;
     }
     
-//    public function codigoAvailability($codigo)
-//    {
-//    $this->db->where('cod_num',$codigo);
-//    $query  =   $this->db->get('paises');
-//    return $query->row();
-//    }
-//    public function alfatresAvailability($codigo)
-//    {
-//    $this->db->where('alfa_tres',$codigo);
-//    $query  =   $this->db->get('paises');
-//    return $query->row();
-//    }
-//     public function alfadosAvailability($codigo)
-//    {
-//    $this->db->where('alfa_dos',$codigo);
-//    $query  =   $this->db->get('paises');
-//    return $query->row();
-//    }
+
     
     public function mostrarPais($id)
     {
