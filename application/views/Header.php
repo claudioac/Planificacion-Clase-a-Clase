@@ -109,10 +109,10 @@ and open the template in the editor.
             <div class="container">
               <ul class="nav">
                 <li><a href="#">Login</a></li>
-                <li><a href="http://localhost/Proyecto/index.php/inicio" >Home</a></li>
-                <li><a href="http://localhost/Proyecto/index.php/crud_planificacion">Crear</a></li>
-                <li><a href="http://localhost/Proyecto/index.php/mostrar_planificacion">Planificaciones</a></li>
-                <li><a href="http://localhost/Proyecto/index.php/eliminar_planificacion">Eliminar</a></li>
+                <li><a href="<?=base_url('index.php/inicio')?>">Home</a></li>
+                <li><a href="<?=base_url('index.php/crud_planificacion')?>">Crear</a></li>
+                <li><a href="<?=base_url('index.php/mostrar_planificacion')?>">Planificaciones</a></li>
+                <li><a href="<?=base_url('index.php/eliminar_planificacion')?>">Eliminar</a></li>
                 <li><a href="#">Cerrar Sesion</a></li>
               </ul>
             </div>

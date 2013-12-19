@@ -7,7 +7,7 @@
             $("#facultad").change(function() {
                 $("#facultad option:selected").each(function() { 
                    facultad = $('#facultad').val();
-                    $.post("http://localhost/Proyecto/index.php/crud_planificacion/llena_departamentos", {
+                    $.post("<?= base_url('/index.php/crud_planificacion/llena_departamentos')?>", {
                         facultad : facultad
                     }, function(data) {
                         $("#departamento").html(data);
@@ -21,7 +21,7 @@
             $("#departamento").change(function() {
                 $("#departamento option:selected").each(function() { 
                    departamento = $('#departamento').val();
-                    $.post("http://localhost/Proyecto/index.php/crud_planificacion/llena_escuelas", {
+                    $.post("<?= base_url('/index.php/crud_planificacion/llena_escuelas')?>", {
                         departamento : departamento
                     }, function(data) {
                         $("#escuela").html(data);
@@ -35,7 +35,7 @@
             $("#escuela").change(function() {
                 $("#escuela option:selected").each(function() { 
                    escuela = $('#escuela').val();
-                    $.post("http://localhost/Proyecto/index.php/crud_planificacion/llena_carreras", {
+                    $.post("<?= base_url('/index.php/crud_planificacion/llena_carreras')?>", {
                         escuela : escuela
                     }, function(data) {
                         $("#carrera").html(data);
@@ -49,7 +49,7 @@
             $("#carrera").change(function() {
                 $("#carrera option:selected").each(function() { 
                    carrera = $('#carrera').val();
-                    $.post("http://localhost/Proyecto/index.php/crud_planificacion/llena_asignaturas", {
+                    $.post("<?=base_url('/index.php/crud_planificacion/llena_asignaturas')?>", {
                         carrera : carrera
                     }, function(data) {
                         $("#ramo").html(data);

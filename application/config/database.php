@@ -49,9 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'claudio';
-$db['default']['password'] = 'kalanastacia';
-$db['default']['database'] = 'tarea6';
+$db['default']['username'] = 'postgres';
+$db['default']['password'] = 'evangelions';
+$db['default']['database'] = 'Tarea06';
 $db['default']['dbdriver'] = 'postgre';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
