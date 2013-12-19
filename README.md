@@ -7,7 +7,7 @@ luego modificar los parametros de database php  de la carpeta config dentro de l
 
 se trabaja con la tabla paises de la base de datos
 
-se ingresa mediante esta direccion url
+se ingresa mediante esta direccion url.
 
 http://localhost/Proyecto/index.php/paises
 
