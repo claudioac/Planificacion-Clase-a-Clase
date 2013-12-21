@@ -1,5 +1,5 @@
  <div class="jumbutron">
-    <h1 class="text-center page-header">Datos Generales</h1>
+    <h1 class="text-center page-header">Editar Planificación</h1>
     
     <script type="text/javascript">
         
@@ -7,7 +7,7 @@
             $("#facultad").change(function() {
                 $("#facultad option:selected").each(function() { 
                    facultad = $('#facultad').val();
-                    $.post("<?= base_url('/index.php/crud_planificacion/llena_departamentos')?>", {
+                    $.post("<?= base_url('/index.php/editar_planificacion/llena_departamentos')?>", {
                         facultad : facultad
                     }, function(data) {
                         $("#departamento").html(data);
@@ -21,7 +21,7 @@
             $("#departamento").change(function() {
                 $("#departamento option:selected").each(function() { 
                    departamento = $('#departamento').val();
-                    $.post("<?= base_url('/index.php/crud_planificacion/llena_escuelas')?>", {
+                    $.post("<?= base_url('/index.php/editar_planificacion/llena_escuelas')?>", {
                         departamento : departamento
                     }, function(data) {
                         $("#escuela").html(data);
@@ -35,7 +35,7 @@
             $("#escuela").change(function() {
                 $("#escuela option:selected").each(function() { 
                    escuela = $('#escuela').val();
-                    $.post("<?= base_url('/index.php/crud_planificacion/llena_carreras')?>", {
+                    $.post("<?= base_url('/index.php/editar_planificacion/llena_carreras')?>", {
                         escuela : escuela
                     }, function(data) {
                         $("#carrera").html(data);
@@ -49,7 +49,7 @@
             $("#carrera").change(function() {
                 $("#carrera option:selected").each(function() { 
                    carrera = $('#carrera').val();
-                    $.post("<?=base_url('/index.php/crud_planificacion/llena_asignaturas')?>", {
+                    $.post("<?=base_url('/index.php/editar_planificacion/llena_asignaturas')?>", {
                         carrera : carrera
                     }, function(data) {
                         $("#ramo").html(data);
@@ -70,7 +70,7 @@
    
 
     
-     <?= form_open('index.php/crud_planificacion/recibirdatos')?>
+     <?= form_open('index.php/editar_planificacion/editar/'.$query->cod_clasificacion)?>
     </div>
     
     <div class="container-fluid">
@@ -91,23 +91,23 @@
         ?>        
     </select>
     <?= form_label('Departamento: ','departamento')?>
-     <select required name="departamento" id="departamento" value="<?php echo set_value('departamento')?>" >
+     <select required name="departamento" id="departamento"  >
          
          <option value="">Selecciona Departamento</option>
     </select>
     <?= form_label('Escuela: ','facultad')?>   
-    <select required name="escuela" id="escuela" value="<?php echo set_value('escuela')?>">
+    <select required name="escuela" id="escuela" >
             
             <option value="">Selecciona Escuela</option>
     </select>
    <?= form_label('Carrera : ','carrera')?>   
-    <select required name="carrera" id="carrera" value="<?php echo set_value('carrera')?>">
+    <select required name="carrera" id="carrera">
        
         <option value="">Selecciona Carrera</option>
         
     </select>
     <?= form_label('Asignatura: ','asignatura')?>   
-    <select required name="ramo" id="ramo" value="<?php echo set_value('ramo')?>">
+    <select required name="ramo" id="ramo" >
        
         <option value="">Selecciona Asignatura</option>
         
@@ -117,19 +117,19 @@
              'name'=>'rut_profesor',
              'placeholder'=>'12.345.678-9',
              'required type'=> 'text',
-            'value' => set_value('rut_profesor'),
+            'value' => $query->rut
          );
          $fecha=array(
              'name'=>'fecha',
              'type'=>'date',
              'required type'=> 'date',
-             'value' => set_value('fecha'),
+             'value' => $query->fecha
          );
          $semestre=array(
              'name'=>'semestre',
              'placeholder'=>'Número del Semestre',
              'required type'=> 'text',
-             'value' => set_value('semestre'),
+             'value' => $query->semestre
          );
          ?>
                  
@@ -148,7 +148,7 @@
              'name'=>'objetivo',             
              'rows'=>'10',
              'class'=>'field span12',
-             'value' => set_value('objetivo')
+             'value' => $query->objetivo
          );   ?>
         
             <?= form_label('Objetivos: <br> ','objetivo')?>
@@ -159,7 +159,7 @@
              'name'=>'estrategia',
              'rows'=>'10',
              'class'=>'field span12',
-         'value' => set_value('estrategia')
+         'value' => $query->estrategia
              
              
      );?>
@@ -174,7 +174,7 @@
     
     <div class="text-center">
         <?= anchor('index.php/inicio', 'Cancelar', array('class' => 'btn btn-danger'));?>  
-        <?=  form_submit('','Enviar','class="btn btn-primary"')?>
+        <?=  form_submit('','Actualizar','class="btn btn-primary"')?>
     </div>  
      <div class="text-error text-center">
         <br>
@@ -183,4 +183,3 @@
      <?= form_close()?>
     
     <br>
-    

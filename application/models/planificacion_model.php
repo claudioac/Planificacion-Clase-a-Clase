@@ -56,6 +56,8 @@ class Planificacion_model extends CI_Model{
     public function crearPlanificacion($data)
     {
         $this->db->insert('planificacion',array('rut'=>$data['profesor'],'objetivo'=>$data['objetivo'],'estrategia'=>$data['estrategia'],'fecha'=>$data['fecha'],'semestre'=>$data['semestre'],'facultad'=>$data['facultad'],'departamento'=>$data['departamento'],'escuela'=>$data['escuela'],'carrera'=>$data['carrera'],'asignatura'=>$data['asignatura']));
+    
+        return TRUE;
     }
 }   
     

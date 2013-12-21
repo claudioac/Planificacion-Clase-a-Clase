@@ -1,18 +1,20 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Crud_planificacion extends CI_Controller
+class Editar_planificacion extends CI_Controller
 {
     public function __construct() {
         parent::__construct();
         $this->load->model('planificacion_model');
+        $this->load->model('editar_model');
     }
     
-    public function index(){
+    public function index()
+            {
         
         
         $this->load->view('Header');
-       $data['facultades']= $this->planificacion_model->facultades();
-        $this->load->view('crud_planificacion/crear_planificacion',$data);
+        $data['facultades']= $this->planificacion_model->facultades();
+        $this->load->view('editar_planificacion/editar_planificacion',$data);
         $this->load->view('Footer');
     }
     
@@ -76,11 +78,15 @@ class Crud_planificacion extends CI_Controller
           
             }
     }
-        public function  recibirdatos()
-        {
-            
-          if($this->input->post())
-            {
+    
+    
+    public function editar($id)
+    {
+        if (! $id) {
+            show_404();
+        }
+         if($this->input->post())
+         {
             $this->form_validation->set_rules('facultad', 'facultad', 'required');
             $this->form_validation->set_rules('departamento', 'departamento', 'required');
             $this->form_validation->set_rules('escuela', 'Escuela', 'required');
@@ -91,36 +97,39 @@ class Crud_planificacion extends CI_Controller
             $this->form_validation->set_rules('semestre', 'Semestre', 'required|numeric');
             $this->form_validation->set_rules('objetivo', 'Objetivo', 'required');
             $this->form_validation->set_rules('estrategia', 'Estrategia', 'required');
-            
-            if($this->form_validation->run())
-                {    
-                    $data =array(
-                'facultad'=> $this->input->post('facultad'),
-                'departamento'=>  $this->input->post('departamento'),
-                'escuela'=>  $this->input->post('escuela'),
-                'carrera'=> $this->input->post('carrera'),
-                'asignatura'=>  $this->input->post('ramo'),
-                'profesor'=> $this->input->post('rut_profesor'),
-                'fecha'=>  $this->input->post('fecha'),
-                'semestre'=>  $this->input->post('semestre'),
-                'objetivo'=> $this->input->post('objetivo'),
-                'estrategia'=>  $this->input->post('estrategia')
-            
-                    );
-                   $query =$this->planificacion_model->crearPlanificacion($data);
-                    
-                    if ($query == TRUE) {
-                        redirect(base_url("index.php/inicio"));
+             if($this->form_validation->run())
+             {
+             $data = array(
+            'facultad' => $this->input->post('facultad',TRUE),
+            'departamento' => $this->input->post('departamento',TRUE),
+            'escuela' => $this->input->post('escuela',TRUE),
+            'asignatura' => $this->input->post('ramo',TRUE),
+                 'carrera' => $this->input->post('carrera',TRUE),
+                 'semestre' => $this->input->post('semestre',TRUE),
+                 'fecha' => $this->input->post('fecha',TRUE),
+                 'estrategia' => $this->input->post('estrategia',TRUE),
+                 'rut' => $this->input->post('rut_profesor',TRUE),
+                 'objetivo' => $this->input->post('objetivo',TRUE),
+             );
+             $queri = $this->editar_model->editar($data,$id);
+                    if ($queri == TRUE) {
+                        redirect(base_url("index.php/mostrar_planificacion/"));
                     } else {
-                        show_404();
+                          show_404 ();
                     }
-                } 
+             }
+         }
         $this->load->view('Header');
+        
         $data['facultades']= $this->planificacion_model->facultades();
-        $this->load->view('crud_planificacion/crear_planificacion',$data);
+         $data['query']= $this->editar_model->mostrarPlanificacion($id);
+       
+        $this->load->view('editar_planificacion/editar_planificacion',$data);
         $this->load->view('Footer');
-                
-           }
-        }
+        
+    }
+    
+    
+    
     
 }

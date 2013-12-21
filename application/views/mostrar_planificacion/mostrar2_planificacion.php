@@ -36,7 +36,7 @@
                                 href="<?php echo base_url()?>index.php/mostrar_planificacion/contenido/<?php echo $datos->cod_clasificacion?>" class="btn btn-info">Contenido</a>
                         </td>
                         <td>
-                            <a href="<?php echo base_url()?>index.php/mostrar_planificacion/editar/<?php echo $datos->cod_clasificacion?>" class="btn btn-success">Editar</a>
+                            <a href="<?php echo base_url()?>index.php/editar_planificacion/editar/<?php echo $datos->cod_clasificacion?>" class="btn btn-success">Editar</a>
                             
                         </td>
                         

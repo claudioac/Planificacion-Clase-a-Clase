@@ -43,7 +43,7 @@ class Eliminar_planificacion extends CI_Controller {
                 }
              else{   
                 $this->eliminar_model->eliminar_planificacion($id);
-                redirect(base_url("index.php/inicio"));
+                redirect(base_url("index.php/eliminar_planificacion"));
              }
         
         

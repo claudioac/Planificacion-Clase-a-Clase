@@ -58,7 +58,7 @@ class Pais_model extends CI_Model{
     }
     
    
-        public function editar($datos = array(), $id) {
+   public function editar($datos = array(),$id) {
         $this->db->where('pk', $id);
         $this->db->update('paises', $datos);
         return true;
