@@ -5,6 +5,7 @@ class Crud_planificacion extends CI_Controller
     public function __construct() {
         parent::__construct();
         $this->load->model('planificacion_model');
+        $this->load->model('contenido_model');
     }
     
     public function index(){
@@ -108,9 +109,12 @@ class Crud_planificacion extends CI_Controller
             
                     );
                    $query =$this->planificacion_model->crearPlanificacion($data);
+                   $foraneacontenido = $this->planificacion_model->getPlanificacion($data);
                     
                     if ($query == TRUE) {
-                        redirect(base_url("index.php/inicio"));
+                        redirect(base_url('index.php/contenido_planificacion/index/'.$foraneacontenido->cod_clasificacion));
+                        
+                        
                     } else {
                         show_404();
                     }
@@ -123,4 +127,8 @@ class Crud_planificacion extends CI_Controller
            }
         }
     
+       
+
+        
+                
 }

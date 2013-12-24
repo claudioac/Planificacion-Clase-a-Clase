@@ -9,7 +9,7 @@ class Editar_planificacion extends CI_Controller
     }
     
     public function index()
-            {
+      {
         
         
         $this->load->view('Header');

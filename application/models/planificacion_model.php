@@ -59,6 +59,17 @@ class Planificacion_model extends CI_Model{
     
         return TRUE;
     }
+    
+    public function getPlanificacion($data)
+    {
+        $array= array('rut'=>$data['profesor'],'objetivo'=>$data['objetivo'],'estrategia'=>$data['estrategia'],'fecha'=>$data['fecha'],'semestre'=>$data['semestre'],'facultad'=>$data['facultad'],'departamento'=>$data['departamento'],'escuela'=>$data['escuela'],'carrera'=>$data['carrera'],'asignatura'=>$data['asignatura']);
+         $query = $this->db
+                ->select("*")
+                ->from('planificacion')
+                ->where($array)
+                ->get();
+        return $query->row();
+    }
 }   
     
      

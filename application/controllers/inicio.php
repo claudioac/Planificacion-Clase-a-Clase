@@ -20,7 +20,7 @@ class Inicio extends CI_Controller {
 	public function index()
 	{
                 $this->load->view('Header');
-		$this->load->view('index/Login');
+		$this->load->view('index/Home');
                 $this->load->view('Footer');
 	}
 }

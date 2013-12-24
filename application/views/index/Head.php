@@ -83,7 +83,7 @@ and open the template in the editor.
         border-radius: 0 3px 3px 0;
       }
     </style>
-    
+
   </head>
 
   <body>
@@ -96,11 +96,11 @@ and open the template in the editor.
           <div class="navbar-inner">
             <div class="container">
               <ul class="nav">
-                <li><a href="<?=base_url('index.php/inicio')?>">Home</a></li>
-                <li><a href="<?=base_url('index.php/crud_planificacion')?>">Crear</a></li>
-                <li><a href="<?=base_url('index.php/mostrar_planificacion')?>">Planificaciones</a></li>
-                <li><a href="<?=base_url('index.php/eliminar_planificacion')?>">Eliminar</a></li>
-                <li><a href="#">Cerrar Sesion</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Crear</a></li>
+                <li><a href="">Planificaciones</a></li>
+                <li><a href="">Eliminar</a></li>
+                <li><a href="">Cerrar Sesion</a></li>
               </ul>
             </div>
           </div>
