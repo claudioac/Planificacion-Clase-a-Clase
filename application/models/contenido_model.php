@@ -6,7 +6,7 @@ class Contenido_model extends CI_Model{
         $this->load->database();
     }
     
-    public function crear($datos)
+    public function crear($datos = array())
     {
         $this->db->insert('contenido',$datos);
         return TRUE;
@@ -25,6 +25,16 @@ class Contenido_model extends CI_Model{
                 ->select("*")
                 ->from('contenido')
                 ->where($array)
+                ->get();
+        return $query->row();
+    }
+    public function Geteditarcontenido($id)
+    {
+        
+         $query = $this->db
+                ->select("*")
+                ->from('contenido')
+                ->where("id_contenido",$id)
                 ->get();
         return $query->row();
     }
@@ -58,5 +68,13 @@ class Contenido_model extends CI_Model{
                 ->delete( "contenido", array( "id_contenido" => $id));
                 return true;
     } 
+    
+    
+    public function Actualizar($datos = array(),$id)
+    {
+        $this->db->where('id_contenido', $id);
+        $this->db->update('contenido', $datos);
+        return true;
+    }
     
 }

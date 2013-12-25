@@ -36,14 +36,19 @@ class Eliminar_planificacion extends CI_Controller {
                 $this->load->view('Footer');
     }
     
-    public function eliminar($id)
+    public function eliminar($id,$id2)
     {
              if (!$id) {
                         show_404 ();
                 }
-             else{   
+             else{
+                
                 $this->eliminar_model->eliminar_planificacion($id);
-                redirect(base_url("index.php/eliminar_planificacion"));
+                $query = $this->eliminar_model->consulta($id2);
+                $this->load->view('Header');
+                $this->load->view('eliminar_planificacion/eliminar2_planificacion',compact("query"));
+                $this->load->view('Footer');
+                
              }
         
         

@@ -29,7 +29,7 @@
                         <td><?php echo $datos->fecha?></td>
                         <td><?php echo $datos->semestre;?></td>
                         <td> 
-                        <a href="<?php echo base_url()?>index.php/eliminar_planificacion/eliminar/<?php echo $datos->cod_clasificacion?>" onclick="return confirm('¿Desea eliminar esta Planificación?')" class="btn btn-warning" >Eliminar</a>
+                        <a href="<?php echo base_url()?>index.php/eliminar_planificacion/eliminar/<?php echo $datos->cod_clasificacion?>/<?php echo $datos->rut?>" onclick="return confirm('¿Desea eliminar esta Planificación?')" class="btn btn-warning" >Eliminar</a>
                             
                         </td>
                         

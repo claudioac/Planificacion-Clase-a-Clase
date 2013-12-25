@@ -1,76 +1,27 @@
-<h1 class="text-center page-header">Contenidos</h1>
-
-
-<table class="table table-striped" >
-
-  <tr>
-
-    <th>Unidad</th>
-
-    <th>Objetivos</th>    
-
-    
-    <th>Contenido</th>
-    
-    <th>Evaluaciones</th>
-    
-    <th>Inicio de Semana</th>
-    <th>Termino de Semana</th>
-    <th>Editar</th>
-    <th>Eliminar</th>
-  </tr>
-                        <?php 
-               
-                        foreach ($query as $datos)
-                        {
-                                ?>
-                        <tr>
-                        <td><?php echo $datos->unidad;?></td>
-                        <td><?php echo $datos->objetivos_esp?></td>
-                        <td><?php echo $datos->contenido_tematico?></td>
-                        <td><?php echo $datos->evaluaciones?></td>
-                        <td><?php echo $datos->fecha_iniciosemana;?></td>
-                        <td><?php echo $datos->fecha_terminosemana;?></td>
-                        <td>
-                            <a
-                                href="<?php echo base_url()?>index.php/contenido_planificacion/editar/<?php echo $datos->id_contenido;?>/<?php echo $datos->cod_clasificacion?>" class="btn">Editar</a>
-                        </td>
-                        <td> 
-                        <a href="<?php echo base_url()?>index.php/contenido_planificacion/eliminar/<?php echo $datos->id_contenido?>/<?php echo $datos->cod_clasificacion?>" onclick="return confirm('¿Desea eliminar este Contenido?')" class="btn btn-warning" >Eliminar</a>
-                            
-                        </td>
-                        
-                        
-
-                </tr>
-                <?php 
-        } ?>
-  </table>
-
-<h1 class="text-center page-header">Agregar Contenido</h1>
+<h1 class="text-center page-header">Editar Contenido</h1>
 
 <div class="container-fluid">
     <div class="row-fluid">  
 
-    <?= form_open(base_url('index.php/contenido_planificacion/crear/'.$id)); ?>
+    <?= form_open(base_url('index.php/contenido_planificacion/editar/'.$id. '/'.$query->cod_clasificacion)); ?>
     <?php
     $unidad = array(
         'name' => 'unidad',
         'id' => 'unidad',
         'placeholder' => 'Unidad',
-        'value' => set_value('unidad')
+        'value' => $query->unidad
     );
     $semanaAnual = array(
         'name' => 'semana_anual',
         'id' => 'semana_anual',
         'placeholder' => 'Semana',
-        'value' => set_value('semana_anual')
+        'value' => $query->num_semana_anual
     );
     $semanaSemestral = array(
         'name' => 'semana_semestral',
         'id' => 'semana_semestral',
         'placeholder' => 'Semana',
-        'value' => set_value('semana_semestral')
+        'value' => $query->num_sem_semestral
     );
     $obj_esp = array(
         'name' => 'objetivos',
@@ -78,19 +29,19 @@
         'placeholder' => 'Objetivos',
         'rows'=>'5',
         'class'=>'field span12',
-        'value' => set_value('objetivos')
+        'value' => $query->objetivos_esp
     );
 
     $fechainicial = array(
         'name' => 'fechainicio',
         'type' => 'date',
-        'value' => set_value('fechainicio')
+        'value' => $query->fecha_iniciosemana
     );
 
     $fechatermino = array(
         'name' => 'fechatermino',
         'type' => 'date',
-        'value' => set_value('fechatermino')
+        'value' => $query->fecha_terminosemana
     );
     $contTematico = array(
         'name' => 'ContenidoTematico',
@@ -98,7 +49,7 @@
         'placeholder' => 'Contenido Tematico',
         'rows'=>'5',
          'class'=>'field span12',
-        'value' => set_value('ContenidoTematico')
+        'value' => $query->contenido_tematico
     );
     $evaluaciones = array(
         'name' => 'evaluaciones',
@@ -106,9 +57,13 @@
         'placeholder' => 'Evaluaciones',
         'rows'=>'5',
         'class'=>'field span12',
-        'value' => set_value('evaluaciones')
+        'value' => $query->evaluaciones
     );
-   
+    $boton = array(
+        'name' => 'enviar',
+        'id' => 'enviar',
+        'value' => 'Enviar',
+    );
     ?>
 <div class="span2 offset1" >
     <table>
@@ -162,10 +117,10 @@
 
      </div>    
 </div>  
-<?= form_hidden('planificacion',$id); ?>
+<?= form_hidden('planificacion',$query->cod_clasificacion); ?>
     <div class="text-center">
         <?= anchor('index.php/inicio', 'Cancelar', array('class' => 'btn btn-danger'));?>  
-        <?=  form_submit('','Enviar','class="btn btn-primary"')?>
+        <?=  form_submit('','Actualizar','class="btn btn-primary"')?>
     </div>  
 <?= form_close() ?>
     
