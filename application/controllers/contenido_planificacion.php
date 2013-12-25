@@ -25,18 +25,19 @@ class Contenido_planificacion extends CI_Controller {
         $this->load->view('Header');
         $this->load->view('Contenido/contenido_planificacion',  compact("id"));
         $this->load->view('Footer');
-        $this->planificacion=$id;
+        
+        
         
     }
 
-    public function crear() {
+    public function crear($id=null) {
         
         
         if ($this->input->post()) {
             $this->form_validation->set_rules('unidad', 'Unidad', 'required');
             $this->form_validation->set_rules('semana_anual', 'Semana Anual', 'required');
             $this->form_validation->set_rules('semana_semestral', 'Semana Semestral', 'required');
-            $this->form_validation->set_rules('objetivos', 'Obejtivos', 'required');
+            $this->form_validation->set_rules('objetivos', 'Objetivos', 'required');
             $this->form_validation->set_rules('fechainicio', 'Fecha Inicio', 'required');
             $this->form_validation->set_rules('fechatermino', 'Fecha Termino', 'required');
             $this->form_validation->set_rules('ContenidoTematico', 'Contenido Tematico', 'required');
@@ -66,7 +67,7 @@ class Contenido_planificacion extends CI_Controller {
                 }
             }
 
-        $id = $this->planificacion;       
+              
         $this->load->view('Header');
         $this->load->view('Contenido/contenido_planificacion',  compact("id"));
         $this->load->view('Footer');
@@ -84,17 +85,20 @@ class Contenido_planificacion extends CI_Controller {
         $this->load->view('Footer');
     }
     
-    public function eliminar($id)
+    public function eliminar($id2,$id)
     {
          if (!$id) {
                         show_404 ();
                 }
-             else{   
-                $borrar = $this->contenido_model->delete_contenido($id);
+             else{ 
+        $borrar = $this->contenido_model->delete_contenido($id2);
        $query = $this->contenido_model->getContenidos($id);
         $this->load->view('Header');
         $this->load->view('Contenido/contenido2_planificacion',  compact("query","id"));
+        
         $this->load->view('Footer');
+        
+          
              }
     }
         

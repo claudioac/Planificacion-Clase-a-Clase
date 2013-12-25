@@ -36,7 +36,7 @@
                                 href="<?php echo base_url()?>index.php/contenido_planificacion/editar/<?php echo $datos->id_contenido;?>" class="btn">Editar</a>
                         </td>
                         <td> 
-                        <a href="<?php echo base_url()?>index.php/contenido_planificacion/eliminar/<?php echo $datos->id_contenido?>" onclick="return confirm('¿Desea eliminar este País?')" class="btn btn-warning" >Eliminar</a>
+                        <a href="<?php echo base_url()?>index.php/contenido_planificacion/eliminar/<?php echo $datos->id_contenido?>/<?php echo $datos->cod_clasificacion?>" onclick="return confirm('¿Desea eliminar este Contenido?')" class="btn btn-warning" >Eliminar</a>
                             
                         </td>
                         
@@ -47,18 +47,18 @@
         } ?>
   </table>
 
-<h1 class="text-center page-header">Contenido Planificación</h1>
+<h1 class="text-center page-header">Agregar Contenido</h1>
 
 <div class="container-fluid">
     <div class="row-fluid">  
 
-    <?= form_open(base_url('index.php/contenido_planificacion/crear')); ?>
+    <?= form_open(base_url('index.php/contenido_planificacion/crear/'.$id)); ?>
     <?php
     $unidad = array(
         'name' => 'unidad',
         'id' => 'unidad',
         'placeholder' => 'Unidad',
-        'value' => '1'
+        'value' => set_value('unidad')
     );
     $semanaAnual = array(
         'name' => 'semana_anual',
@@ -70,7 +70,7 @@
         'name' => 'semana_semestral',
         'id' => 'semana_semestral',
         'placeholder' => 'Semana',
-        'value' => '1'
+        'value' => set_value('semana_semestral')
     );
     $obj_esp = array(
         'name' => 'objetivos',
@@ -108,11 +108,7 @@
         'class'=>'field span12',
         'value' => set_value('evaluaciones')
     );
-    $boton = array(
-        'name' => 'enviar',
-        'id' => 'enviar',
-        'value' => 'Enviar',
-    );
+   
     ?>
 <div class="span2 offset1" >
     <table>

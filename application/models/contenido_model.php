@@ -40,8 +40,19 @@ class Contenido_model extends CI_Model{
         
         return $query->result();
     }
-     
-    public function delete_contenido($id)
+    
+    public function  recatar_codigo($id)
+    {
+        $query = $this->db
+                ->select('cod_clasificacion')
+                ->from('contenido')
+                ->where('id_contenido',$id)
+                ->get();
+                return $query->row();        
+        
+    }     
+
+        public function delete_contenido($id)
     {
                 $this->db
                 ->delete( "contenido", array( "id_contenido" => $id));

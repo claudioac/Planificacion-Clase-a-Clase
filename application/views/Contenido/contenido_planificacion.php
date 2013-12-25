@@ -3,7 +3,7 @@
 <div class="container-fluid">
     <div class="row-fluid">  
 
-    <?= form_open(base_url('index.php/contenido_planificacion/crear')); ?>
+    <?= form_open(base_url('index.php/contenido_planificacion/crear/'.$id)); ?>
     <?php
     $unidad = array(
         'name' => 'unidad',
