@@ -78,7 +78,7 @@
              <div class="span2 offset1" >
                  
     <?= form_label('Facultad: ','facultad')?>             
-    <select required name="facultad" id="facultad" value="<?php echo set_value('facultad')?>">
+                 <select required name="facultad" id="facultad" value="<?php echo set_select('facultad')?>">
         <option value="">Ingrese su facultad</option>
         <?php 
         foreach($facultades->result() as $fila)
@@ -91,23 +91,23 @@
         ?>        
     </select>
     <?= form_label('Departamento: ','departamento')?>
-     <select required name="departamento" id="departamento" value="<?php echo set_value('departamento')?>" >
+     <select required name="departamento" id="departamento" value="<?php echo set_select('departamento')?>" >
          
          <option value="">Selecciona Departamento</option>
     </select>
     <?= form_label('Escuela: ','facultad')?>   
-    <select required name="escuela" id="escuela" value="<?php echo set_value('escuela')?>">
+                 <select required name="escuela" id="escuela" value="<?php echo set_select('escuela')?>">
             
             <option value="">Selecciona Escuela</option>
     </select>
    <?= form_label('Carrera : ','carrera')?>   
-    <select required name="carrera" id="carrera" value="<?php echo set_value('carrera')?>">
+                 <select required name="carrera" id="carrera" value="<?php echo set_select('carrera')?>">
        
         <option value="">Selecciona Carrera</option>
         
     </select>
     <?= form_label('Asignatura: ','asignatura')?>   
-    <select required name="ramo" id="ramo" value="<?php echo set_value('ramo')?>">
+                 <select required name="ramo" id="ramo" value="<?php echo set_select('ramo')?>">
        
         <option value="">Selecciona Asignatura</option>
         
@@ -125,20 +125,23 @@
              'required type'=> 'date',
              'value' => set_value('fecha'),
          );
-         $semestre=array(
-             'name'=>'semestre',
-             'placeholder'=>'Número del Semestre',
-             'required type'=> 'text',
-             'value' => set_value('semestre'),
-         );
-         ?>
+//         $semestre=array(
+//             'name'=>'semestre',
+//             'placeholder'=>'Número del Semestre',
+//             'required type'=> 'text',
+//             'value' => set_value('semestre'),
+//         );
+//         ?>
                  
       <?= form_label('Profesor Encargado: ','rut')?>
       <?= form_input($profesor)?>
       <?= form_label('Fecha: ','Fecha')?>
        <?= form_input($fecha)?>
-       <?= form_label('Semestre: ','semestre')?>
-       <?= form_input($semestre)?>
+                 <select name="semestre" id="semestre">
+                     <option value="0"> Seleccione Semestre</option>
+                     <option value="1" <?php echo set_select('semestre') ?>>1</option>
+                     <option value="2" <?php echo set_select('semestre') ?>>2</option>
+                 </select>
                  
      </div>
             

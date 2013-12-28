@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Planificación Clase a Clase</title>
         <link href="<?php echo base_url('css/bootstrap.css')?>" rel="stylesheet">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
@@ -71,6 +71,8 @@ if ( $this->session->flashdata('ControllerMessage') != '' )
 
             <div class="text-center">
 	<a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal">Inicia sesion</a>
+       <a class="btn btn-success" href="<?= base_url('index.php/alumno_planificacion')?>">Buscar Planificación</a>
+
         </div>
  <?= form_open('index.php/logeo/login')?>    
 	<div id="myModal" class="modal hide fade text-center">
@@ -112,6 +114,9 @@ if ( $this->session->flashdata('ControllerMessage') != '' )
 		</div>
 	</div>
   <?= form_close()?> 
+        
+
+ 
  
 	</div>
 	

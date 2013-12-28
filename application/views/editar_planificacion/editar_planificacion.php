@@ -125,20 +125,23 @@
              'required type'=> 'date',
              'value' => $query->fecha
          );
-         $semestre=array(
-             'name'=>'semestre',
-             'placeholder'=>'Número del Semestre',
-             'required type'=> 'text',
-             'value' => $query->semestre
-         );
+//         $semestre=array(
+//             'name'=>'semestre',
+//             'placeholder'=>'Número del Semestre',
+//             'required type'=> 'text',
+//             'value' => $query->semestre
+//         );
          ?>
                  
       <?= form_label('Profesor Encargado: ','rut')?>
       <?= form_input($profesor)?>
       <?= form_label('Fecha: ','Fecha')?>
        <?= form_input($fecha)?>
-       <?= form_label('Semestre: ','semestre')?>
-       <?= form_input($semestre)?>
+          <select name="semestre" id="semestre">
+                     <option value="<?php echo $query->semestre ?>" <?php echo set_select('semestre') ?>><?php echo $query->semestre ?></option>
+                     <option value="1" <?php echo set_select('semestre') ?>>1</option>
+                     <option value="2" <?php echo set_select('semestre') ?>>2</option>
+                 </select>
                  
      </div>
             
