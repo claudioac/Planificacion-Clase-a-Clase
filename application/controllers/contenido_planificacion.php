@@ -52,7 +52,7 @@ class Contenido_planificacion extends CI_Controller {
                     'fecha_iniciosemana' => $this->input->post('fechainicio'),
                     'fecha_terminosemana' => $this->input->post('fechatermino'),
                     'unidad' => $this->input->post('unidad'),
-                    'objetivos_esp' => $this->input->post('obejtivos'),
+                    'objetivos_esp' => $this->input->post('objetivos'),
                     'contenido_tematico' => $this->input->post('ContenidoTematico'),
                     'evaluaciones' => $this->input->post('evaluaciones'),
                     'cod_clasificacion' => $this->input->post('planificacion'),
