@@ -10,6 +10,24 @@
     <script type="text/javascript" src="<?php echo base_url('rut/jquery.Rut.js'); ?>"></script>
 </head>
 <body>
+    
+ <script type="text/javascript">
+        $(document).ready(function(){
+           $('#Usuario').Rut({
+        on_error: function(){ alert('Rut incorrecto'); }
+            });
+                });
+</script>   
+
+<?php 
+if ( $this->session->flashdata('ControllerMessage') != '' ) 
+    {
+?>
+<p style="color: red;"><?php echo $this->session->flashdata('ControllerMessage'); ?></p>
+<?php 
+} 
+?>
+
        
 	<div class="container">
             
@@ -54,6 +72,7 @@
             <div class="text-center">
 	<a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal">Inicia sesion</a>
         </div>
+ <?= form_open('index.php/logeo/login')?>    
 	<div id="myModal" class="modal hide fade text-center">
 		<div class="modal-header">
 		  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
@@ -63,25 +82,19 @@
 			<for class="form-horizontal" role="form">
                               
 				<div class="form-gruop control-gruop">
-					<label for="inputUsuario" class=" control-label">Usuario</label>
+					<label for="Usuario" class=" control-label">Usuario</label>
 					<div class="controls">
-						<input type="text" id="inputUsuario" placeholder="Usuario">
+                                            <input type="text" name="Usuario" id="Usuario" placeholder="Usuario" value="<?php echo set_value("Usuario") ?>">
 					</div>
 				</div>
 				<h4></h4>
 				<div>
 				<div class="for-group control-group">
-					<label for="inputPassword" class="control-label">Password</label>
+					<label for="Password" class="control-label">Password</label>
 					<div class="controls">
-						<input type="password" id="inputPassword" placeholder="Password">
+                                            <input type="password" name="Password" id="Password" placeholder="Password" value="<?php echo set_value("Password")?>">
 					</div>
-					<div class="control-group">
-						<div class="controls">
-							<label class="checkbox">
-								<input type="checkbox">Recordar la contraseña
-							</label>
-						</div>
-					</div>
+					
 				</div>
 				</div>
  
@@ -94,9 +107,12 @@
     </div>
 		<div class="modal-footer">
 			<a href="#" class="btn btn-inverse" data-dismiss="modal">Salir</a>
-			<a href="login" class="btn btn-success">Ingresar</a>
+                        <?=  form_submit('','Ingresar','class="btn btn-success"')?>
+			
 		</div>
 	</div>
+  <?= form_close()?> 
+ 
 	</div>
 	
 

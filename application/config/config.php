@@ -224,7 +224,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = 'claudioac';
+$config['encryption_key'] = '8e77f430870eb4b8138d96d12f4633cd5470daae';
 
 /*
 |--------------------------------------------------------------------------

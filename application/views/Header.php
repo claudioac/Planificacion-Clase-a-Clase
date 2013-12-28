@@ -100,7 +100,7 @@ and open the template in the editor.
                 <li><a href="<?=base_url('index.php/crud_planificacion')?>">Crear</a></li>
                 <li><a href="<?=base_url('index.php/mostrar_planificacion')?>">Planificaciones</a></li>
                 <li><a href="<?=base_url('index.php/eliminar_planificacion')?>">Eliminar</a></li>
-                <li><a href="#">Cerrar Sesion</a></li>
+                <li><a href="<?=base_url('index.php/logeo/logout')?>">Cerrar Sesion</a></li>
               </ul>
             </div>
           </div>
