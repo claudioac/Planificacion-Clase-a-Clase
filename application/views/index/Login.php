@@ -11,25 +11,7 @@
 </head>
 <body>
     
- <script type="text/javascript">
-        $(document).ready(function(){
-           $('#Usuario').Rut({
-        on_error: function(){ alert('Rut incorrecto'); }
-            });
-                });
-</script>   
-
-<?php 
-if ( $this->session->flashdata('ControllerMessage') != '' ) 
-    {
-?>
-<p style="color: red;"><?php echo $this->session->flashdata('ControllerMessage'); ?></p>
-<?php 
-} 
-?>
-
-       
-	<div class="container">
+<div class="container">
             
  <h1 class="text-center page-header">Portal Planificación Clase a Clase</h1>
 		<div class="row">
@@ -84,6 +66,14 @@ if ( $this->session->flashdata('ControllerMessage') != '' )
 			<for class="form-horizontal" role="form">
                               
 				<div class="form-gruop control-gruop">
+                                         <script type="text/javascript">
+                                            $(document).ready(function(){
+                                               $('#Usuario').Rut({
+                                            on_error: function(){ alert('Rut incorrecto'); }
+                                                });
+                                                    });
+                                            </script>  
+                                    
 					<label for="Usuario" class=" control-label">Usuario</label>
 					<div class="controls">
                                             <input type="text" name="Usuario" id="Usuario" placeholder="Usuario" value="<?php echo set_value("Usuario") ?>">
@@ -114,8 +104,20 @@ if ( $this->session->flashdata('ControllerMessage') != '' )
 		</div>
 	</div>
   <?= form_close()?> 
-        
+ 
+ <div class="text-center"> 
+ 
+<?php 
+if ( $this->session->flashdata('ControllerMessage') != '' ) 
+    {
+?>
+<p style="color: red;"><?php echo $this->session->flashdata('ControllerMessage'); ?></p>
+<?php 
+} 
+?>
 
+
+ </div>
  
  
 	</div>

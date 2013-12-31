@@ -5,33 +5,10 @@ class Alumno_model extends CI_Model{
         parent::__construct();
         $this->load->database();
     }
-//    select planificacion.*,docentes.nombre,docentes.apellidos
-//from planificacion 
-//join docentes
-//on docentes.nombre='Sebastian' and docentes.apellidos='Salazar Molina' and planificacion.carrera = '21030'
-//order by planificacion.fecha
+
     public function getPlanificacion($data = array())
     {
-//        $where = array (
-//            "docentes.nombre" => $data['nombre'],
-//            'docentes.apellidos' => $data['apellidos'],
-//            'planificacion.carrera' => $data['carrera'],
-//            'planficacion.semestre' => $data['semestre'],
-//            'planificacion.asignatura' => $data['asignatura']
-//            
-//            
-//        );
-//        
-//        $query = $this->db
-//                 ->select("planificacion.*,docentes.nombre,docentes.apellidos")
-//                 ->from('planificacion')
-//                 ->join('docentes','docentes.nombre =' $data['nombre'],'inner')
-//                 ->where($where)
-//                 ->order_by('planificacion.fecha')
-//                 ->get();
-//        return $query->result();
-        
-        $query=$this->db->query("
+    $query=$this->db->query("
                 select planificacion.*,docentes.nombre,docentes.apellidos
                 from planificacion 
                 join docentes
@@ -44,9 +21,44 @@ class Alumno_model extends CI_Model{
 
         ");
         
-                        echo  $this->db->last_query();
+//                        echo  $this->db->last_query();
         
         return $query->result();
+    }
+    
+    public function getContenidosyEstrategias ($id)
+    {
+         $where = array(
+            "cod_clasificacion" => $id
+        );
+        $query = $this->db
+                ->select("*")
+                ->from('planificacion')
+                ->where($where)
+                ->get();
+        return $query->row();
+    }
+    
+    public function getContenidos($id)
+    {
+        $query= $this->db
+                ->select('*')
+                ->from('contenido')
+                ->where('cod_clasificacion', $id)
+                ->get();
+        
+        return $query->result();
+    }
+    
+    public function Getmostrarcontenidos($id)
+    {
+        
+         $query = $this->db
+                ->select("*")
+                ->from('contenido')
+                ->where("id_contenido",$id)
+                ->get();
+        return $query->row();
     }
     
 }

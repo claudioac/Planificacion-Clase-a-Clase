@@ -40,23 +40,82 @@ class Alumno_planificacion extends CI_Controller {
                     );
                 
                 $query = $this->alumno_model->getPlanificacion($data);
-//                    if($query!=null)
-//                    {
-//                        redirect('index.php/logeo');
-//                    }
-//                    else
-//                    {
-//                        
-//                        $this->session->set_flashdata('ControllerMessage','Los datos Ingresados son incorrectos. Inténtelo nuevamente por favaor.');
-//                        redirect('index.php/alumno_planificacion');
-//                        
-//                    }
+                    if($query)
+                    {
+                        $this->load->view('alumno_planificacion/get_planificacion', compact("query"));
+                        
+                    }
+                    else
+                    {
+                        
+                        $this->session->set_flashdata('ControllerMessage','Los datos Ingresados son incorrectos. Inténtelo nuevamente por favaor.');
+                        redirect('index.php/alumno_planificacion');
+                        
+                    }
                 
-            }  
+            }
+            else{
+                $this->load->view('alumno_planificacion/alumno_planificacion');
+            }
                 
         }
         
-        $this->load->view('alumno_planificacion/alumno_planificacion');
+        
     }
+    
+    
+    public function objetivosyestrategias($id=NULL){
+        
+         if (! $id) {
+            show_404();
+        }
+        
+        $query = $this->alumno_model->getContenidosyEstrategias($id);
+        
+          if($query)
+                    {
+                        $this->load->view('alumno_planificacion/get_ObjetivosyEstrategias', compact("query"));
+                        
+                    }
+                    else
+                    {
+                        
+                        $this->session->set_flashdata('ControllerMessage','Los datos Ingresados son incorrectos. Inténtelo nuevamente por favaor.');
+                        redirect('index.php/alumno_planificacion');
+                        
+                    }
+        
+    }
+    
+   public function contenidos($id)
+   {
+         if (! $id) {
+            show_404();
+        }
+        
+         $query = $this->alumno_model->getContenidos($id);
+        
+          if($query)
+                    {
+                        $this->load->view('alumno_planificacion/get_Contenidos', compact("query"));
+                        
+                    }
+                    else
+                    {
+                        
+                        $this->session->set_flashdata('ControllerMessage','Los datos Ingresados son incorrectos. Inténtelo nuevamente por favaor.');
+                        redirect('index.php/alumno_planificacion');
+                        
+                    }
+        
+   }
+   
+   public function mostrar_contenido($id,$id2)
+   {
+       
+       $query = $this->alumno_model->Getmostrarcontenidos($id);
+       $this->load->view('alumno_planificacion/mostrar_contenido', compact("query"));
+       
+   }
     
 }

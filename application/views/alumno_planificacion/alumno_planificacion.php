@@ -158,7 +158,7 @@ and open the template in the editor.
          </select>
         <?= form_label('Nombre Profesor:','nombre_profesor') ?>  
         <?=form_input($nombre_profesor)?>
-        <?= form_label('Nombre Apellidos:','apellidos_profesor') ?>  
+        <?= form_label('Apellidos:','apellidos_profesor') ?>  
         <?=form_input($apellidos_profesor)?>
     
     
