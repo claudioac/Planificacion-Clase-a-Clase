@@ -176,7 +176,7 @@
     </div>
     
     <div class="text-center">
-        <?= anchor('index.php/inicio', 'Cancelar', array('class' => 'btn btn-danger'));?>  
+        <input type="button" value="Cancelar" class="btn btn-danger" onclick="history.back(-1)" />
         <?=  form_submit('','Actualizar','class="btn btn-primary"')?>
     </div>  
      <div class="text-error text-center">

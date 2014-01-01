@@ -48,7 +48,7 @@ class Alumno_planificacion extends CI_Controller {
                     else
                     {
                         
-                        $this->session->set_flashdata('ControllerMessage','Los datos Ingresados son incorrectos. Inténtelo nuevamente por favaor.');
+                        $this->session->set_flashdata('ControllerMessage','Los datos Ingresados son incorrectos. Inténtelo nuevamente por favor.');
                         redirect('index.php/alumno_planificacion');
                         
                     }
@@ -80,7 +80,7 @@ class Alumno_planificacion extends CI_Controller {
                     else
                     {
                         
-                        $this->session->set_flashdata('ControllerMessage','Los datos Ingresados son incorrectos. Inténtelo nuevamente por favaor.');
+                        $this->session->set_flashdata('ControllerMessage','No existen Objetivos ni Estrategias');
                         redirect('index.php/alumno_planificacion');
                         
                     }
@@ -103,7 +103,7 @@ class Alumno_planificacion extends CI_Controller {
                     else
                     {
                         
-                        $this->session->set_flashdata('ControllerMessage','Los datos Ingresados son incorrectos. Inténtelo nuevamente por favaor.');
+                        $this->session->set_flashdata('ControllerMessage','La Planificacion no contiene contenidos, Intente  Buscar Nuevamente');
                         redirect('index.php/alumno_planificacion');
                         
                     }

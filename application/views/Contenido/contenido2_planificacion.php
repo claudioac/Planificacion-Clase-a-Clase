@@ -164,7 +164,7 @@
 </div>  
 <?= form_hidden('planificacion',$id); ?>
     <div class="text-center">
-        <?= anchor('index.php/inicio', 'Cancelar', array('class' => 'btn btn-danger'));?>  
+        <input type="button" value="Atrás" class="btn btn-danger" onclick="history.back(-1)" /> 
         <?=  form_submit('','Enviar','class="btn btn-primary"')?>
     </div>  
 <?= form_close() ?>

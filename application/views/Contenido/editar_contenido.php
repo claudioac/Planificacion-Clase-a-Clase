@@ -119,7 +119,7 @@
 </div>  
 <?= form_hidden('planificacion',$query->cod_clasificacion); ?>
     <div class="text-center">
-        <?= anchor('index.php/inicio', 'Cancelar', array('class' => 'btn btn-danger'));?>  
+        <input type="button" value="Cancelar" class="btn btn-danger" onclick="history.back(-1)" />
         <?=  form_submit('','Actualizar','class="btn btn-primary"')?>
     </div>  
 <?= form_close() ?>

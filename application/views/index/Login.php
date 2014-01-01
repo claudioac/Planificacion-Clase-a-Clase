@@ -76,7 +76,7 @@
                                     
 					<label for="Usuario" class=" control-label">Usuario</label>
 					<div class="controls">
-                                            <input type="text" name="Usuario" id="Usuario" placeholder="Usuario" value="<?php echo set_value("Usuario") ?>">
+                                            <input type="text" name="Usuario" id="Usuario" placeholder="12.345.678-9" value="<?php echo set_value("Usuario") ?>">
 					</div>
 				</div>
 				<h4></h4>

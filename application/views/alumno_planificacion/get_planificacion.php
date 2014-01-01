@@ -103,6 +103,7 @@ and open the template in the editor.
     <th>Semestre</th>
     <th>Contenido</th>
     <th>Objetivos y Estrategias</th>
+    <th>Descargar</th>
   </tr>
   
                                 
@@ -130,6 +131,10 @@ and open the template in the editor.
                         </td>
                         <td>
                             <a href="<?php echo base_url()?>index.php/alumno_planificacion/objetivosyestrategias/<?php echo $datos->cod_clasificacion?>" class="btn-small btn btn-success">Objetivos y Estrategia</a>
+                            
+                        </td>
+                        <td>
+                            <a href="<?php echo base_url()?>index.php/Descargar/index/<?php echo $datos->cod_clasificacion?>" onclick="return confirm('¿Desea Descargar esta Planificación?')" class="btn btn-mini btn-inverse">Descargar</a>
                             
                         </td>
                         

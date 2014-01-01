@@ -15,7 +15,7 @@ class Pais_model extends CI_Model{
                 ->select("*")
                 ->from ("paises")
                 ->get();
-                return $query->result ();
+                return $query->result();
     }
     
     public function verificar($data=array())

@@ -10,6 +10,7 @@
     <th>Semestre</th>
     <th>Contenido</th>
     <th>Editar</th>
+    <th>Descargar</th>
   </tr>
   
                                 
@@ -37,6 +38,10 @@
                         </td>
                         <td>
                             <a href="<?php echo base_url()?>index.php/editar_planificacion/editar/<?php echo $datos->cod_clasificacion?>" class="btn btn-success">Editar</a>
+                            
+                        </td>
+                         <td>
+                            <a href="<?php echo base_url()?>index.php/Descargar/index/<?php echo $datos->cod_clasificacion?>" onclick="return confirm('¿Desea Descargar esta Planificación?')" class="btn btn-mini btn-inverse">Descargar</a>
                             
                         </td>
                         
