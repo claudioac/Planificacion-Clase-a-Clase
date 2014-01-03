@@ -36,18 +36,17 @@ class Logeo extends CI_Controller {
 //            die(sha1($this->input->post("Password",TRUE)));
            if($this->form_validation->run())
            {
-           $datos = $this->login_model->logeo($this->input->post("Usuario",TRUE), sha1($this->input->post("Password",TRUE)));
-//           echo $datos;exit;
+//           $datos = $this->login_model->logeo($this->input->post("Usuario",TRUE), sha1($this->input->post("Password",TRUE)));
+           $rut = $this->input->post("Usuario",TRUE);
+           $p = strtoupper($this->input->post("password",TRUE));
+           $str = hash("SHA256", $p);
+           $resultado = autenticar($rut, $str);
+//           echo $resultado;exit;
            
-                if ($datos==1) 
+                if ($resultado) 
                 {
-                  $_SESSION['profesor'] = $this->input->post("Usuario",true);  
-//                $this->session->set_userdata("planificacion");
-//                $this->session->set_userdata('login', $this->input->post('login',true));
-                //$this->session->set_userdata('saludo','hola te saludo desde la sessión');
-                //$session_id = $this->session->userdata('login');
-                //echo $this->session->userdata('saludo');
-                redirect(base_url().'index.php/inicio',  301);
+                    $_SESSION['profesor'] = $this->input->post("Usuario", true);
+                    redirect(base_url() . 'index.php/inicio', 301);
                     
                 }
                 else {
@@ -62,7 +61,40 @@ class Logeo extends CI_Controller {
        
    }
    
-       public function logout()
+        public function autenticar($rut , $contrasena)
+        {
+             $resultado = false;
+
+        try {
+
+        // Creacion de un arreglo con los parámetros de entrada.
+        $parametros = array();
+        $parametros['rut'] = $rut;
+        $parametros['password'] = $contrasena;
+
+        // usuario de webService
+        $autenticacion = array('login' => 'cacuna',
+            'password' => '30a7a0479c66576762bdc671041ceb1817ded11f');
+
+        $cliente = new SoapClient("http://informatica.utem.cl:8011/dirdoc-auth/ws/auth?wsdl", $autenticacion);
+        $objeto = $cliente->autenticar($parametros);
+        $codigo = (int) $objeto->return->codigo;
+        $descripcion = (string) verificar($objeto->return->descripcion);
+
+                if ($codigo > 0) {
+                    $resultado = true;
+                } else {
+                    error_log("Servicio WEB respondió: $descripcion ($codigo)");
+                }
+                } catch (Exception $e) {
+                $resultado = false;
+                error_log("Error en autenticacion: {$e->getMessage()}");
+                }
+            return $resultado;
+        }
+
+
+        public function logout()
         {
 //            $this->session->unset_userdata(array('login' => ''));
 //            $this->session->sess_destroy("planificacion");
