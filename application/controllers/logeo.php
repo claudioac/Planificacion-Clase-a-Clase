@@ -2,10 +2,11 @@
 
 class Logeo extends CI_Controller {
 
-    private $session_id;
+//    private $session_id;
     public function __construct() {
         parent::__construct();
-        $this->session_id =  $this->session->userdata('login');
+//        $this->session_id =  $this->session->userdata('login');
+        session_start();
         
     }
 
@@ -22,6 +23,7 @@ class Logeo extends CI_Controller {
                 {
                     redirect(base_url('index.php/logeo/login'),301);   
                 }
+       
 		
                 
 	}
@@ -39,8 +41,9 @@ class Logeo extends CI_Controller {
            
                 if ($datos==1) 
                 {
-                $this->session->set_userdata("planificacion");
-                $this->session->set_userdata('login', $this->input->post('login',true));
+                  $_SESSION['profesor'] = $this->input->post("Usuario",true);  
+//                $this->session->set_userdata("planificacion");
+//                $this->session->set_userdata('login', $this->input->post('login',true));
                 //$this->session->set_userdata('saludo','hola te saludo desde la sessión');
                 //$session_id = $this->session->userdata('login');
                 //echo $this->session->userdata('saludo');
@@ -61,8 +64,9 @@ class Logeo extends CI_Controller {
    
        public function logout()
         {
-            $this->session->unset_userdata(array('login' => ''));
-            $this->session->sess_destroy("planificacion");
+//            $this->session->unset_userdata(array('login' => ''));
+//            $this->session->sess_destroy("planificacion");
+        session_destroy();
              redirect(base_url('index.php/logeo/login'),301);
         }
         

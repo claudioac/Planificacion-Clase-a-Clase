@@ -5,6 +5,11 @@ class Eliminar_planificacion extends CI_Controller {
     
     public function __construct() {
         parent::__construct();
+          session_start();
+        if(!isset($_SESSION['profesor']))
+        {
+            redirect(base_url('index.php/logeo/login'),301);
+        }
         $this->load->model('eliminar_model');
     }
     

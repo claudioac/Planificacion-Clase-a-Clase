@@ -8,7 +8,7 @@ and open the template in the editor.
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Planificacion Clase a Clase</title>
     <link href="<?php echo base_url('css/bootstrap.css')?>" rel="stylesheet">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<!--    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
     <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
     <script src="<?php echo base_url('js/bootstrap.min.js')?>"></script>
     <script type="text/javascript" src="<?php echo base_url('rut/jquery.Rut.js'); ?>"></script>
@@ -87,7 +87,7 @@ and open the template in the editor.
   </head>
 
   <body>
-    
+<!-- Head para vistas de todo el proyecto   -->
  <div class="container">
 
       <div class="masthead">

@@ -89,6 +89,7 @@ foreach ($contenido->result() as $row) {
  
 $filename='Planificacion.xls'; //save our workbook as this file name
 header('Content-Type: application/vnd.ms-excel'); //mime type
+
 header('Content-Disposition: attachment;filename="'.$filename.'"'); //tell browser what's the file name
 header('Cache-Control: max-age=0'); //no cache
              

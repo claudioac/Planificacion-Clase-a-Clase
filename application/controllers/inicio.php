@@ -17,11 +17,16 @@ class Inicio extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-        private $session_id;
+//        private $session_id;
         public function __construct() {
         parent::__construct();
 //        $this->session_id =  $this->session->userdata('login');
-//        
+        session_start();
+        if(!isset($_SESSION['profesor']))
+        {
+            redirect(base_url('index.php/logeo/login'),301);
+        }
+        
         }
         
 	public function index()

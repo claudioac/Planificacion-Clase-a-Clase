@@ -119,7 +119,7 @@
 </div>  
 <?= form_hidden('planificacion',$id); ?>
     <div class="text-center">
-        <input type="button" value="Cancelar" class="btn btn-danger" onclick="history.back(-1)" />
+        <?= anchor('index.php/mostrar_planificacion', 'Cancelar', array('class' => 'btn btn-danger'));?>   
         <?=  form_submit('','Enviar','class="btn btn-primary"')?>
     </div>  
 <?= form_close() ?>
