@@ -1,5 +1,63 @@
 <h1 class="text-center page-header">Editar Contenido</h1>
 
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+<script src="jquery.ui.datepicker-es.js"></script>  
+   
+<script>
+$(function () {
+ $.datepicker.regional['es'] = {
+        closeText: 'Cerrar',
+        prevText: '<Ant',
+        nextText: 'Sig>',
+        currentText: 'Hoy',
+        monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+        monthNamesShort: ['Ene','Feb','Mar','Abr', 'May','Jun','Jul','Ago','Sep', 'Oct','Nov','Dic'],
+        dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+        dayNamesShort: ['Dom','Lun','Mar','Mié','Juv','Vie','Sáb'],
+        dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sá'],
+        weekHeader: 'Sm',
+        dateFormat: 'dd/mm/yy',
+        firstDay: 1,
+        isRTL: false,
+        showMonthAfterYear: false,
+        yearSuffix: ''
+    };    
+$.datepicker.setDefaults($.datepicker.regional["es"]);
+$("#fechainicio").datepicker({
+minDate: "0D",
+//maxDate: "+1M, 5D"
+});
+});
+</script>
+
+<script>
+$(function () {
+ $.datepicker.regional['es'] = {
+        closeText: 'Cerrar',
+        prevText: '<Ant',
+        nextText: 'Sig>',
+        currentText: 'Hoy',
+        monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+        monthNamesShort: ['Ene','Feb','Mar','Abr', 'May','Jun','Jul','Ago','Sep', 'Oct','Nov','Dic'],
+        dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+        dayNamesShort: ['Dom','Lun','Mar','Mié','Juv','Vie','Sáb'],
+        dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sá'],
+        weekHeader: 'Sm',
+        dateFormat: 'dd/mm/yy',
+        firstDay: 1,
+        isRTL: false,
+        showMonthAfterYear: false,
+        yearSuffix: ''
+    };    
+$.datepicker.setDefaults($.datepicker.regional["es"]);
+$("#fechatermino").datepicker({
+minDate: "0D",
+//maxDate: "+1M, 5D"
+});
+});
+</script>
+
 <div class="container-fluid">
     <div class="row-fluid">  
 
@@ -34,13 +92,15 @@
 
     $fechainicial = array(
         'name' => 'fechainicio',
-        'type' => 'date',
+        'id' => 'fechainicio',
+        'type' => 'text',
         'value' => $query->fecha_iniciosemana
     );
 
     $fechatermino = array(
         'name' => 'fechatermino',
-        'type' => 'date',
+        'id'=>'fechatermino',
+        'type' => 'text',
         'value' => $query->fecha_terminosemana
     );
     $contTematico = array(
