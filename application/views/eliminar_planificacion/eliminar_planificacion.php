@@ -15,7 +15,8 @@
     'id' => 'rut_profesor',
     'name'=> 'rut_profesor',
     'placeholder' => '12.345.678-9',
-    'required type'=> 'text'
+    'required type'=> 'text',
+    'value'=> set_value('rut_profesor')
     
 );
 ?>
@@ -28,7 +29,20 @@
  <?= form_close()?>   
 
 
- 
+<div class="text-center"> 
+
+                <?php
+                $error_msg = trim($this->session->flashdata('ControllerMessage'));
+                if (!empty($error_msg)) {
+                    error_log($error_msg);
+                    ?>
+                    <p style="color: red;"><?php echo $error_msg; ?></p>
+                    <?php
+                }
+                ?>
+
+
+  </div> 
 
     
 </div>    

@@ -34,7 +34,8 @@ class Mostrar_planificacion extends CI_Controller {
                 //si el largo del array query es 0 muestre el error 404
                 if(sizeof($query)==0)
                 {
-                        show_404();
+                    $this->session->set_flashdata('ControllerMessage', 'Rut Incorrecto.');
+                    redirect(base_url('index.php/mostrar_planificacion'), 301);
                         
                 }
                 $this->load->view('Header');

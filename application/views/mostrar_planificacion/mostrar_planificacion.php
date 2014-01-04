@@ -26,3 +26,17 @@
 <?=  form_submit('','Enviar','class="btn btn-primary"')?>    
  <?= form_close()?>    
 </div>    
+<div class="text-center"> 
+
+                <?php
+                $error_msg = trim($this->session->flashdata('ControllerMessage'));
+                if (!empty($error_msg)) {
+                    error_log($error_msg);
+                    ?>
+                    <p style="color: red;"><?php echo $error_msg; ?></p>
+                    <?php
+                }
+                ?>
+
+
+</div>

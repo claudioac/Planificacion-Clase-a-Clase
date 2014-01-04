@@ -32,6 +32,7 @@ class Logeo extends CI_Controller {
                 $rut = $this->input->post("Usuario", TRUE);
                 $p = strtoupper($this->input->post("Password", TRUE));
                 $str = hash('sha256', $p);
+                error_log("$rut / $p / $str");
                 $resultado = ws_autenticar($rut, $str);
 //           echo $resultado;exit;
 
