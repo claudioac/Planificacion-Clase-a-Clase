@@ -112,6 +112,7 @@ and open the template in the editor.
             'id' => 'codigo_asignatura',
             'name'=> 'codigo_asignatura',
             'placeholder' => 'Ej: INF-638',
+            'onKeyUp' =>'this.value=this.value.toUpperCase();',
             'value' => set_value('codigo_asignatura'),
 
         );
@@ -122,6 +123,7 @@ and open the template in the editor.
             'id' => 'nombre_profesor',
             'name'=> 'nombre_profesor',
             'placeholder' => 'Nombre',
+            
             'value' => set_value('nombre_profesor')
 
         );
@@ -129,6 +131,7 @@ and open the template in the editor.
             'id' => 'apellidos_profesor',
             'name'=> 'apellidos_profesor',
             'placeholder' => 'Apellido1 Apellido2',
+            
             'value' => set_value('apellidos_profesor')
 
         );

@@ -14,34 +14,34 @@
 
             <h1 class="text-center page-header">Portal Planificación Clase a Clase</h1>
             <div class="row">
-                <div id="myCarousel" class="carousel slide">
+                <div id="myCarousel" class="carousel slide" style="width: 700px; margin: 0 auto">
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img src="<?php echo base_url('img/utem.jpg') ?>" height="120" width="600" alt="">
+                            <img src="<?php echo base_url('img/imagen1.jpg') ?>"  alt="">
                             <div class="carousel-caption">
-                                <h4>Titulo</h4>
-                                <p>Descripcion</p>
+                                <h4>Planificación Clase a Clase</h4>
+                                <p>Aplicación de administracion de planificaciones semestrales</p>
                             </div>
                         </div>
                         <div class="item">
                             <img src="<?php echo base_url('img/utem3.jpg') ?>" height="120" width="600" alt="">
                             <div class="carousel-caption">
-                                <h4>Titulo</h4>
-                                <p>Descripcion</p>
+                                <h4>Universidad Tecnológica Metropolitana</h4>
+                                <p>Del Estado de Chile</p>
                             </div>
                         </div>
                         <div class="item">
-                            <img src="<?php echo base_url('img/utem2.jpg') ?>" height="120" width="600" alt="">
+                            <img src="<?php echo base_url('img/imagen2.jpg') ?>" alt="">
                             <div class="carousel-caption">
-                                <h4>Titulo</h4>
-                                <p>Descripcion</p>
+                                <h4>Departamento de Computación e Informática</h4>
+                                <p>Escuela de Informática</p>
                             </div>
                         </div>
                         <div class="item">
-                            <img src="<?php echo base_url('img/utem4.jpeg') ?>" height="120" width="600" alt="">
+                            <img src="<?php echo base_url('img/imagen1.jpg') ?>"alt="">
                             <div class="carousel-caption">
-                                <h4>Titulo</h4>
-                                <p>Descripcion</p>
+                                <h4>Ingenieria en Software</h4>
+                                <p>Profesor: Sebastián Salazar Molina</p>
                             </div>
                         </div>
                     </div>
@@ -49,6 +49,8 @@
                     <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
                 </div>
             </div>
+            
+            <br>
 
             <div class="text-center">
                 <a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal">Inicia sesion</a>

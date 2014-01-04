@@ -48,7 +48,7 @@ class Alumno_planificacion extends CI_Controller {
                     else
                     {
                         
-                        $this->session->set_flashdata('ControllerMessage','Los datos Ingresados son incorrectos. Inténtelo nuevamente por favor.');
+                        $this->session->set_flashdata('ControllerMessage','Los datos Ingresados son incorrectos, Asegure que el Nombre y Apellidos no sea todo en minúsculas. Inténtelo nuevamente por favor.');
                         redirect('index.php/alumno_planificacion');
                         
                     }
