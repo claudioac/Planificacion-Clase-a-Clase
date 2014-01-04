@@ -164,6 +164,7 @@ minDate: "0D",
       <?= form_input($profesor)?>
       <?= form_label('Fecha: ','fecha')?>
        <?= form_input($fecha)?>
+       <?= form_label('Semestre: ','semestre')?>          
                  <select name="semestre" id="semestre">
                      <option value="0"> Seleccione Semestre</option>
                      <option value="1" <?php echo set_select('semestre') ?>>1</option>

@@ -40,13 +40,14 @@ class Contenido_planificacion extends CI_Controller {
         
         if ($this->input->post()) {
             $this->form_validation->set_rules('unidad', 'Unidad', 'required');
-            $this->form_validation->set_rules('semana_anual', 'Semana Anual', 'required');
-            $this->form_validation->set_rules('semana_semestral', 'Semana Semestral', 'required');
+            $this->form_validation->set_rules('semana_anual', 'Semana Anual', 'required|less_than[52]');
+            $this->form_validation->set_rules('semana_semestral', 'Semana Semestral', 'required|less_than[18]');
             $this->form_validation->set_rules('objetivos', 'Objetivos', 'required');
             $this->form_validation->set_rules('fechainicio', 'Fecha Inicio', 'required');
             $this->form_validation->set_rules('fechatermino', 'Fecha Termino', 'required');
             $this->form_validation->set_rules('ContenidoTematico', 'Contenido Tematico', 'required');
             $this->form_validation->set_rules('evaluaciones', 'Evaluaciones', 'required');
+            
             
 
             if ($this->form_validation->run()) {
@@ -112,8 +113,8 @@ class Contenido_planificacion extends CI_Controller {
         if($this->input->post())
         {
             $this->form_validation->set_rules('unidad', 'Unidad', 'required');
-            $this->form_validation->set_rules('semana_anual', 'Semana Anual', 'required');
-            $this->form_validation->set_rules('semana_semestral', 'Semana Semestral', 'required');
+            $this->form_validation->set_rules('semana_anual', 'Semana Anual', 'required|less_than[52]');
+            $this->form_validation->set_rules('semana_semestral', 'Semana Semestral', 'required|less_than[18]');
             $this->form_validation->set_rules('objetivos', 'Objetivos', 'required');
             $this->form_validation->set_rules('fechainicio', 'Fecha Inicio', 'required');
             $this->form_validation->set_rules('fechatermino', 'Fecha Termino', 'required');
