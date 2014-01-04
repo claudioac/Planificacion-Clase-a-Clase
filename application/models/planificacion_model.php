@@ -25,7 +25,7 @@ class Planificacion_model extends CI_Model{
 
     public function escuelas($departamentos)
      {
-        $escuelas = $this->db->get_where('escuela',array('departamento_fk' => $departamentos));
+        $escuelas = $this->db->get_where('escuelas',array('departamento_fk' => $departamentos));
         if($escuelas->num_rows()>0)
         {
             return $escuelas;
