@@ -178,6 +178,11 @@ Navegador de Internet como Chrome, Firefox, Opera, Internet Explorer 8 o
  Superior.
 \end_layout
 
+\begin_layout Itemize
+Herramientas Office tales como OpenOffice o MicrosftOffice que permitan
+ el uso de Hojas de Cálculos.
+\end_layout
+
 \begin_layout Part
 Instalación
 \end_layout
@@ -575,9 +580,16 @@ No necesariamente, solamente se exigen permisos a los profesores de cada
 
 \end_deeper
 \begin_layout Enumerate
-
+¿Tengo que tener Office instalado?
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Para efectos del completo uso de la aplicación es necesario debido al hecho
+ que el usuario tiene el privilegio de descargar su planificación en .xls
+\end_layout
+
+\end_deeper
 \begin_layout Part
 Errores Comunes
 \end_layout
@@ -586,5 +598,104 @@ Errores Comunes
 Errores Comunes
 \end_layout
 
+\begin_layout Enumerate
+Not Found
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Se debe a que la url no esta bien ingresada, verifique que la url sea la
+ siguiente 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://localhost/Proyecto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+No se ha podido conectar al servidor de base de datos usando la configuración
+ suministrada.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Se debe a que hay datos en la parte de la configuración que no es correcto
+ o la conexión a internet esta teniendo problemas, por favor verifique si
+ los datos expuesto a continuación coinciden con su configuración de base
+ de datos y la conexión a internet sea estable.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Dirección: Proyecto/aplications/config/database.php
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename configuracionBDD.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Configuración predeterminada de Base de Datos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+No poder borrar,editar en la carpeta www
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Verifique que la carpeta tenga los permisos correspondiente en el sistema
+ operativo que este utilizando.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Linux sudo chmod 777 var/www.
+\end_layout
+
+\begin_layout Enumerate
+Windows dar permisos de administrador.
+\end_layout
+
+\end_deeper
+\end_deeper
 \end_body
 \end_document
