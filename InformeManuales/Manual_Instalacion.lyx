@@ -111,6 +111,34 @@ LatexCommand tableofcontents
 Introducción
 \end_layout
 
+\begin_layout Standard
+En una organización educacional uno de los pilares es la docencia y es punto
+ de preocupación mas importante es como impartirla, es decir como ordenar
+ los contenidos de cada clase que se impartirá.
+ 
+\end_layout
+
+\begin_layout Standard
+En la Universidad se aplican procesos en los cuales los profesores dejan
+ en claro como administraran el contenido para las clases que ellos dictaran.
+ La institución actualmente hace uso de un formulario el cual ingresan solo
+ una vez cada vez que se inicia un nuevo semestre una de las desventajas
+ es que no pueden modificarlos en la marcha.
+ además de que dichas planificaciones son desconocidas por los estudiantes
+\end_layout
+
+\begin_layout Standard
+Para ello se realizó una aplicación la cual ayuda a resolver esta situación,
+ como también proporcionar un medio claro de comunicación con la comunidad
+ universitaria.
+\end_layout
+
+\begin_layout Standard
+En el presente manual enseñaremos la correcta firma de instalar dicho sistema
+ cumpliendo los requisitos explicados en el manual, ademas de proporcionar
+ una ayuda a los problemas mas frecuentes y como solucionarlos.
+\end_layout
+
 \begin_layout Chapter
 Alcances
 \end_layout
@@ -383,8 +411,20 @@ El recuadro rojo indica donde se descarga
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
 \begin_layout Plain Layout
 
+
+\backslash
+newpage
 \end_layout
 
 \end_inset
