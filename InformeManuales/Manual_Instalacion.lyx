@@ -115,8 +115,135 @@ Introducción
 Alcances
 \end_layout
 
+\begin_layout Standard
+\align block
+Este proyecto abarca una planificación de clases,mediante la cual se puede
+ programar y llevar un registro de las pautas que se impartirán clase a
+ clase .
+\end_layout
+
+\begin_layout Standard
+\align block
+Para poder iniciar el proyecto fue necesario integrar al cliente con el
+ objetivo de conocer que es lo que necesita que contenga el proyecto .
+\end_layout
+
+\begin_layout Standard
+\align block
+Dentro de los requerimientos del cliente se pueden desprender ciertas caracterís
+ticas que la pagina debe tener , como lo son;
+\end_layout
+
+\begin_layout Itemize
+\align block
+- Una interfaz llamativa 
+\end_layout
+
+\begin_layout Itemize
+\align block
+- Estar dentro de los presupuestos ( costo ) 
+\end_layout
+
+\begin_layout Itemize
+\align block
+- Los desarrolladores del proyecto sean eficientes 
+\end_layout
+
+\begin_layout Itemize
+\align block
+- Se entregue dentro del periodo estimado 
+\end_layout
+
+\begin_layout Itemize
+\align block
+- Fácil de usar y de fácil acceso , es decir, que sea simple navegar dentro
+ de la pagina
+\end_layout
+
+\begin_layout Standard
+\align block
+Con respecto al trabajo en equipo , cada integrante realiza sus aportes
+ en conjunto , se realiza un analisis de los mismos y el resultado es llevado
+ a la practica y subido a github que es GitHub es una forja para alojar
+ proyectos utilizando el sistema de control de versiones Git.
+ De esta manera se puede llevar un orden en la planificación de la información
+ del proyecto.
+ 
+\end_layout
+
+\begin_layout Standard
+\align block
+Dentro de la pagina se encuentran dos iconos de botón , el primero tiene
+ como función iniciar sesión en base a los usuarios ya registrados con previa
+ anticipación en ella .
+ La segunda “ buscar planificación ” nos llevara a un buscador en el que
+ figuran cinco ventanas en las cuales encontramos, código de carrera, código
+ de asignatura, semestre, nombre del profesor y apellidos del mismo .
+ Ya llenados los datos antes mencionados se presiona el botón inicio o buscar
+ según se necesite.
+ La idea de esta secuencia es lograr mayor facilidad de acceso y clarificación
+ de autenticidad en la información ingresada al sistema para llegar con
+ mejor éxito a lo que el usuario desea encontrar dentro de esta pagina.
+ 
+\end_layout
+
+\begin_layout Standard
+\align block
+Al presionar iniciar , se despliegan dos casillas para el inicio de la sesión,
+ una en la que se coloca el nombre de usuario y en la otra la contraseña.
+ Luego de esto nos dan la bienvenida con la opción de crear planificación
+ o buscar planificación .
+ Si ingresamos a crear planificación nos da los iconos de los datos generales
+ como ; facultad (elegir opción), departamento(elegir opción),escuela (elegir
+ opción),carrera (elegir opción), asignatura (elegir opción), profesor encargado
+ (elegir opción),fecha,semestre.A su vez , en el lado derecho de la pantalla
+ , hay dos ventanas grandes para llenar con los objetivos y la estrategia
+ a aplicar en cada caso.
+ La idea de la implementación de estas casillas es completar de la mejor
+ forma y con la mayor cantidad de datos la información general solicitada
+ por la pagina.
+ Luego de llenados los datos cancelamos o enviamos la información .
+ La siguiente opción que nos dan es la de Planificaciones , en la que con
+ el solo hecho de ingresar el número de rut del docente se despliega la
+ planificación clase a clase semanal del docente.
+ En la siguiente opción se encuentra Eliminar en la que se podrá eliminar
+ por completo la información ingresada por el docente, solo de ser necesario.
+ Para finalizar ,luego , se encuentra Cerrar Sesión en donde se podrá cerrar
+ el ingreso que se realizo al sistema .
+ 
+\end_layout
+
 \begin_layout Chapter
 Limitaciones
+\end_layout
+
+\begin_layout Standard
+\align block
+Para llevar a cabo la implementación de este proyecto se ocupo Linux como
+ sistema operativo y PHP , que es un lenguaje de programación de uso general
+ de código del lado del servidor originalmente diseñado para el desarrollo
+ web de contenido dinámico.
+\end_layout
+
+\begin_layout Itemize
+\align block
+PostgreSQL es una herramienta que se encarga de crear y guardar información
+ de forma estructurada y que permite el rápido acceso a su información.
+ 
+\end_layout
+
+\begin_layout Itemize
+\align block
+Codeigniter un un framework para el desarrollo de aplicaciones escritas
+ en php que utiliza el MVC, que permite a los desarrolladores Web mejorar
+ la forma de trabajar y también agregar mayor velocidad a la hora de crear
+ una pagina Web
+\end_layout
+
+\begin_layout Itemize
+\align block
+bootstraps una colección de herramientas de software libre para la creación
+ de sitios y aplicaciones web.
 \end_layout
 
 \begin_layout LyX-Code
