@@ -162,12 +162,12 @@ Base de Datos Postgres Versión 9.1 como mínimo(solo en caso que desee ejecutar
 Instalación
 \end_layout
 
-\begin_layout Section*
+\begin_layout Standard
 Descarga del Programa.
 \end_layout
 
 \begin_layout Standard
-El Programa puede ser descargado desde el sitio web de github desde esta
+el Programa puede ser descargado desde el sitio web de github desde esta
  dirección: 
 \begin_inset Flex URL
 status collapsed
@@ -175,59 +175,6 @@ status collapsed
 \begin_layout Plain Layout
 
 https://github.com/claudioac/Planificacion-Clase-a-Clase
-\end_layout
-
-\end_inset
-
- esto mostrata la diguiente ventana.
-\end_layout
-
-\begin_layout Standard
-AHora usted tiene dos formas de descargar nuestra aplicacion una es descargar
- desde un zip.
- para ello usted en la misma pagina debe clickear el boton 
-\begin_inset Quotes eld
-\end_inset
-
-Download Zip
-\begin_inset Quotes erd
-\end_inset
-
- como se muestra en la imagen.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ImagenesManualUsuario/DondeDescargar1.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-El recuadro rojo indica donde se descarga
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -241,45 +188,9 @@ Instalación del Programa
 
 \begin_layout Standard
 una vez descargado el programa se debe descomprimir la carpeta en el directorio
- donde apache2 guarda las paginas web usualmente es /var/www.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ImagenesManualUsuario/InstalandoenWWW.png
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+ donde apache 2 guarda las paginas web usualmente es /var/www.
+ [en otros sistemas puede ser que esta carpeta sea llamada htdocs] y modificar
+ el nombre de la carpeta descomprimida a Proyecto.
 \end_layout
 
 \begin_layout Standard
