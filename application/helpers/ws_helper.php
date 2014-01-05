@@ -93,5 +93,40 @@ if (!function_exists('ws_cursos_semestre_anio')) {
         }
         return $resultado;
     }
+  
 
 }
+
+//if (!function_exists('wsSession')) {
+//
+//     function wsSession($rut) {
+//         //$resultado = false;
+// 
+//       
+//             // Creacion de un arreglo con los parámetros de entrada.
+//             $parametros = array();
+//             $parametros['rut'] = $rut;
+// 
+//             // usuario de webService
+//            $autenticacion = array('login' => 'cacuna',
+//               'password' => '30a7a0479c66576762bdc671041ceb1817ded11f');
+//
+//          $cliente = new SoapClient("http://informatica.utem.cl:8011/dirdoc-auth/ws/auth?wsdl", $autenticacion);
+//        // $objeto = $cliente->consultarDocente($parametros);
+//                  $objeto = $cliente->consultarEstudiante($parametros);
+//
+//                $tipo=(string) trim($objeto->return->tipo);   
+//               
+//               if($tipo=="ALUM") 
+//                  
+//                    $resultado = False;
+//                 else
+//                    $resultado = TRUE;
+//                    
+//
+//        return $resultado;
+//    }
+//}
+
+
+

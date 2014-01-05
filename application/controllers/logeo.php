@@ -37,8 +37,19 @@ class Logeo extends CI_Controller {
 //           echo $resultado;exit;
 
                 if ($resultado) {
+                    
                     $_SESSION['profesor'] = $this->input->post("Usuario", true);
+//                    $jerarquia = wsSession($rut);
+//                    if($jerarquia==TRUE)
+//                    {
                     redirect(base_url() . 'index.php/inicio', 301);
+//                    }
+//                    else
+//                    {
+//                    $this->session->set_flashdata('ControllerMessage', 'Usuario y/o clave invalida.');
+//                    redirect(base_url('index.php/logeo/logout'), 301);   
+//                    }
+                        
                 } else {
                     $this->session->set_flashdata('ControllerMessage', 'Usuario y/o clave invalida.');
                     redirect(base_url('index.php/logeo/login'), 301);
