@@ -97,6 +97,44 @@ LatexCommand tableofcontents
 Introducción
 \end_layout
 
+\begin_layout Chapter
+Introducción
+\end_layout
+
+\begin_layout Standard
+Hoy en día la docencia siendo un rol fundamental en el desarrollo de nuestra
+ sociedad, tiene como gran responsabilidad de inculcar buenas costumbres
+ a los estudiantes o personas interesadas en alguna área en especial, una
+ buena practica que enseña esta disciplina es el carácter organizacional
+ que tiene que tener una persona en sus actividades docentes como del diario
+ vivir, siendo un claro ejemplo el calenderizar sus actividades importantes
+ 1 mes o 3 semanas antes de realizar alguna actividad en especifica.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Una manera de enseñar la docencia el carácter organizacional que debe tener
+ una persona es siendo ella misma de tener el deber de organizar sus actividades
+ durante el periodo de enseñanza, un ejemplo es cuando una asignatura de
+ alguna carrera en especifica debe realizar la calenderizacion de sus evaluacion
+es o actividades de todo tipo para que el alumnado se organice para dichos
+ acontecimientos, Las universidades hoy en día tienen el deber de implementar
+ el carácter organizacional que debe tener toda asignatura de una carrera
+ donde se ve reflejado el contenido enseñado y el perfil que debe tener
+ el alumnado a finalizar la cátedra correspondiente al momento de aprobar.
+\begin_inset Newline newline
+\end_inset
+
+Este manual enseña la manera de manejar una herramienta web que administra
+ las planificaciones de cada asignatura correspondiente una carrera en especific
+a, para así poder llevar un registro de todos los contenidos que se deben
+ pasar durante un semestre de 18 semanas,evaluaciones y objetivos donde
+ el alumnado tenga a la disposición dicha planificación para así de mejor
+ manera contemplar su avance durante el desarrollo del semestre y organizarse
+ de mejor manera para facilitar su estudio y visualización del desarrollo
+ de su perfil de profesional.
+\end_layout
+
 \begin_layout Part
 Manual De Usuario
 \end_layout

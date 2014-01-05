@@ -5,9 +5,9 @@
 \textclass scrreprt
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language spanish
 \language_package default
-\inputencoding auto
+\inputencoding utf8
 \fontencoding global
 \font_roman default
 \font_sans default
@@ -60,6 +60,22 @@
 
 \begin_body
 
+\begin_layout Titlehead
+Universidad Tecnológica Metropolitana
+\begin_inset Newline newline
+\end_inset
+
+Facultad de Ingeniería
+\begin_inset Newline newline
+\end_inset
+
+Departamento de Computación e Informática
+\begin_inset Newline newline
+\end_inset
+
+Ingeniería en Software
+\end_layout
+
 \begin_layout Title
 Manual De Usuario
 \end_layout
@@ -68,8 +84,25 @@ Manual De Usuario
 Claudio Acuña Ricardo Soto José Acuña
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
 Introducción
+\end_layout
+
+\begin_layout Chapter
+Introducción
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Part
