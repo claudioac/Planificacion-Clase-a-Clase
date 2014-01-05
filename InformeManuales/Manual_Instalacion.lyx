@@ -3,46 +3,6 @@
 \begin_document
 \begin_header
 \textclass scrreprt
-\begin_preamble
-\usepackage{color}
-\definecolor{gray97}{gray}{.97}
-\definecolor{gray75}{gray}{.75}
-\definecolor{gray45}{gray}{.45}
-\usepackage{listings}
-\lstset{ frame=Ltb,
-framerule=0pt,
-aboveskip=0.5cm,
-framextopmargin=3pt,
-framexbottommargin=3pt,
-framexleftmargin=0.4cm,
-framesep=0pt,
-rulesep=.4pt,
-backgroundcolor=\color{gray97},
-rulesepcolor=\color{black},
-%
-stringstyle=\ttfamily,
-showstringspaces = false,
-basicstyle=\small\ttfamily,
-commentstyle=\color{gray45},
-keywordstyle=\bfseries,
-%
-numbers=left,
-numbersep=15pt,
-numberstyle=\tiny,
-numberfirstline = false,
-breaklines=true,
-}
-% minimizar fragmentado de listados
-\lstnewenvironment{listing}[1][]
-{\lstset{#1}\pagebreak[0]}{\pagebreak[0]}
-\lstdefinestyle{consola}
-{basicstyle=\scriptsize\bf\ttfamily,
-backgroundcolor=\color{gray75},
-}
-\lstdefinestyle{PHP}
-{language=PHP,
-}
-\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language spanish
@@ -147,24 +107,20 @@ LatexCommand tableofcontents
 
 \end_layout
 
-\begin_layout LyX-Code
-
-\end_layout
-
-\begin_layout Part
+\begin_layout Chapter
 Introducción
 \end_layout
 
 \begin_layout Chapter
-Introducción.
-\end_layout
-
-\begin_layout Part
 Alcances
 \end_layout
 
-\begin_layout Part
+\begin_layout Chapter
 Limitaciones
+\end_layout
+
+\begin_layout LyX-Code
+
 \end_layout
 
 \begin_layout Part
@@ -175,27 +131,27 @@ Requisitos
 Requisitos:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Section
 Hardware:
 \end_layout
 
 \begin_layout Itemize
-CPU: Intel Pentium D 2.6 GHz or Athlon X2 +3800 RAM: 
+Procesador de 32 bits (x86) o 64 bits (x64) a 1 gigahercio (GHz) o más.
 \end_layout
 
 \begin_layout Itemize
-1 GB RAM Linux 32 bit Y 2 GB RAM Linux 64 bits
+Memoria RAM de 1 gigabyte (GB) (32 bits) o memoria RAM de 2 GB (64 bits).
 \end_layout
 
 \begin_layout Itemize
-OS: Linux 32 o 64 bits
+Espacio disponible en disco rígido de 1 GB (32 bits) o 2 GB (64 bits).
 \end_layout
 
 \begin_layout Itemize
-Disponibilidad de disco duro: 8.5 GB Libres 
+Sistemas Operativos Compatibles Linux, Windows (7 o Superior) o MacOS X
 \end_layout
 
-\begin_layout Standard
+\begin_layout Section
 Software:
 \end_layout
 
@@ -204,7 +160,7 @@ Debe Tener Instalado:
 \end_layout
 
 \begin_layout Itemize
-Apache2
+Apache2 o WampServer(Solamente en Windows ) o XAMPP
 \end_layout
 
 \begin_layout Itemize
@@ -217,73 +173,43 @@ Base de Datos Postgres Versión 9.1 como mínimo(solo en caso que desee ejecutar
  
 \end_layout
 
+\begin_layout Itemize
+Navegador de Internet como Chrome, Firefox, Opera, Internet Explorer 8 o
+ Superior.
+\end_layout
+
 \begin_layout Part
-Proceso de Instalación
+Instalación
 \end_layout
 
 \begin_layout Chapter
+Instalación
+\end_layout
+
+\begin_layout Section
 Descarga del Programa.
 \end_layout
 
 \begin_layout Standard
-El Programa puede ser descargado desde el sitio web de github desde esta
+El Programa debe ser descargado desde el sitio web github desde la siguiente
  dirección: 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
-https://github.com/claudioac/Planificacion-Clase-a-Clase
+https://github.com/claudioac/Proyecto
 \end_layout
 
 \end_inset
 
- esto mostrará la siguiente ventana.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ImagenesManualUsuario/descarga de protecto.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+ esto mostrara la siguiente ventana.
 \end_layout
 
 \begin_layout Standard
 Ahora usted tiene dos formas de descargar nuestra aplicación una es descargar
  desde un zip.
- para ello usted en la misma pagina debe clickear el botón 
+ para ello usted en la misma pagina debe clickear el boton 
 \begin_inset Quotes eld
 \end_inset
 
@@ -334,13 +260,15 @@ El recuadro rojo indica donde se descarga
 
 \end_layout
 
-\begin_layout Chapter
+\begin_layout Section
 Instalación del Programa
 \end_layout
 
 \begin_layout Standard
-una vez descargado el programa se debe descomprimir la carpeta en el directorio
- donde apache2 guarda las paginas web usualmente es /var/www.
+Una vez descargado el programa se debe descomprimir la carpeta en el directorio
+ donde apache2 guarda las paginas web usualmente es /var/www en sistemas
+ operativos Linux, en cambio en Windows es Documentos/www si tiene instalado
+ WampServer.
 \end_layout
 
 \begin_layout Standard
@@ -349,10 +277,6 @@ placement H
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -366,7 +290,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-
+Ubicación donde Debe Ir la Aplicación para su Funcionamiento
 \end_layout
 
 \end_inset
@@ -374,14 +298,13 @@ status open
 
 \end_layout
 
-\end_inset
-
+\begin_layout Plain Layout
 
 \end_layout
 
-\begin_layout Standard
-Otra forma de instalación es utilizando git para clonar la carpeta directamente
- a /var/www para ello en la 
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -400,7 +323,7 @@ newpage
 
 \end_layout
 
-\begin_layout Chapter
+\begin_layout Section
 Puesta en marcha:
 \end_layout
 
@@ -413,9 +336,10 @@ Para que el sitio web funcione debe configurarse la base de datos.
 \end_layout
 
 \begin_layout Standard
-Para poder comprobar el correcto funcionamiento del sitio web ubíquese dentro
- del directorio Proyecto/application/config y compruebe si los datos puestos
- dentro del archivo 
+Para poder comprobar el correcto funcionamiento del sitio web y que los
+ datos por defecto a la conexión del servidor se encuentren adecuadamente
+ correctos ubíquese dentro del directorio Proyecto/application/config y
+ compruebe si los datos puestos dentro del archivo 
 \begin_inset Quotes eld
 \end_inset
 
@@ -438,7 +362,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename configuracionBDD.png
-	scale 70
+	scale 60
 
 \end_inset
 
@@ -461,7 +385,7 @@ Parámetros de configuración del Servidor de Base de datos
 
 \begin_layout Standard
 Ahora si tiene un servidor propio con postgreSQL instalado debe configurar
- los siguientes parametros con los datos de su servidor.
+ los siguientes parámetros con los datos de su servidor.
 \end_layout
 
 \begin_layout Standard
@@ -532,11 +456,133 @@ $db['default']['port'] = numero del puerto de la base de datos;
 
 \end_layout
 
+\begin_layout Standard
+Una vez ya comprobados los datos de conexión a la base de datos, se procede
+ a abrir su navegador y colocar la siguiente url para empezar a usar la
+ aplicación.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://localhost/Proyecto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde se Mostrara a continuación la siguiente pagina donde muestra el correcto
+ funcionamiento de su aplicación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ImagenesManualUsuario/primeravista.png
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Inicio de Nuestra Aplicación Web
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
 Preguntas Frecuentes
 \end_layout
 
+\begin_layout Chapter
+F.A.Q
+\end_layout
+
+\begin_layout Enumerate
+¿El Software puede correr en modo local sin necesidad de internet?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+No puede correr en modo local ya que existe un web servicie que tiene que
+ incluir conexión a internet para su funcionamiento.
+ La base de datos del programa puede ser implementada en modo local.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+¿En que Sistemas Operativos puede correr la aplicación?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+En distribuciones basadas en debian, como ubuntu, etc.
+ Windows xp o superior, y Mac OSX.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+¿Es necesario instalar apache 2?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Es necesario solamente en distribuciones linux, en cambio en distribuciones
+ como Windows o Mac OSX existen Aplicaciones como wampServer,xampp, que
+ traen todo incluido apache, php, etc, lo necesario para el funcionamiento
+ de la aplicación.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+¿Necesito estar registrado para poder ingresar a la aplicación?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+No necesariamente, solamente se exigen permisos a los profesores de cada
+ asignatura para administrar sus planificaciones, el estudiante o persona
+ puede buscar las planificaciones aparentando el boton buscar planificación.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\end_layout
+
 \begin_layout Part
+Errores Comunes
+\end_layout
+
+\begin_layout Chapter
 Errores Comunes
 \end_layout
 
