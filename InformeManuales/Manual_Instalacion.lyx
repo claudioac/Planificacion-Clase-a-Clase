@@ -589,6 +589,22 @@ $db['default']['port'] = numero del puerto de la base de datos;
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Una vez ya comprobados los datos de conexión a la base de datos, se procede
  a abrir su navegador y colocar la siguiente url para empezar a usar la
  aplicación.
