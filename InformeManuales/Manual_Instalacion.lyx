@@ -152,6 +152,22 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Part
+Introducción
+\end_layout
+
+\begin_layout Chapter
+Introducción.
+\end_layout
+
+\begin_layout Part
+Alcances
+\end_layout
+
+\begin_layout Part
+Limitaciones
+\end_layout
+
+\begin_layout Part
 Requisitos 
 \end_layout
 
@@ -164,16 +180,19 @@ Hardware:
 \end_layout
 
 \begin_layout Itemize
-con arquitectura de 32 y 64 bits AMD/Intel, sobre un 1 Gb de ram para el
- servidor
+CPU: Intel Pentium D 2.6 GHz or Athlon X2 +3800 RAM: 
 \end_layout
 
 \begin_layout Itemize
-con acceso a internet, como mínimo
+1 GB RAM Linux 32 bit Y 2 GB RAM Linux 64 bits
 \end_layout
 
 \begin_layout Itemize
-con sistema operativo Linux, windows o MacOS X
+OS: Linux 32 o 64 bits
+\end_layout
+
+\begin_layout Itemize
+Disponibilidad de disco duro: 8.5 GB Libres 
 \end_layout
 
 \begin_layout Standard
@@ -199,10 +218,10 @@ Base de Datos Postgres Versión 9.1 como mínimo(solo en caso que desee ejecutar
 \end_layout
 
 \begin_layout Part
-Instalación
+Proceso de Instalación
 \end_layout
 
-\begin_layout Section*
+\begin_layout Chapter
 Descarga del Programa.
 \end_layout
 
@@ -262,7 +281,7 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
-Ahora usted tiene dos formas de descargar nuestra aplicacion una es descargar
+Ahora usted tiene dos formas de descargar nuestra aplicación una es descargar
  desde un zip.
  para ello usted en la misma pagina debe clickear el botón 
 \begin_inset Quotes eld
@@ -315,7 +334,7 @@ El recuadro rojo indica donde se descarga
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Chapter
 Instalación del Programa
 \end_layout
 
@@ -381,7 +400,7 @@ newpage
 
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Chapter
 Puesta en marcha:
 \end_layout
 
@@ -511,6 +530,14 @@ $db['default']['port'] = numero del puerto de la base de datos;
 \end_inset
 
 
+\end_layout
+
+\begin_layout Part
+Preguntas Frecuentes
+\end_layout
+
+\begin_layout Part
+Errores Comunes
 \end_layout
 
 \end_body

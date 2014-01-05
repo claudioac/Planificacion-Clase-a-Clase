@@ -3,6 +3,46 @@
 \begin_document
 \begin_header
 \textclass scrreprt
+\begin_preamble
+\usepackage{color}
+\definecolor{gray97}{gray}{.97}
+\definecolor{gray75}{gray}{.75}
+\definecolor{gray45}{gray}{.45}
+\usepackage{listings}
+\lstset{ frame=Ltb,
+framerule=0pt,
+aboveskip=0.5cm,
+framextopmargin=3pt,
+framexbottommargin=3pt,
+framexleftmargin=0.4cm,
+framesep=0pt,
+rulesep=.4pt,
+backgroundcolor=\color{gray97},
+rulesepcolor=\color{black},
+%
+stringstyle=\ttfamily,
+showstringspaces = false,
+basicstyle=\small\ttfamily,
+commentstyle=\color{gray45},
+keywordstyle=\bfseries,
+%
+numbers=left,
+numbersep=15pt,
+numberstyle=\tiny,
+numberfirstline = false,
+breaklines=true,
+}
+% minimizar fragmentado de listados
+\lstnewenvironment{listing}[1][]
+{\lstset{#1}\pagebreak[0]}{\pagebreak[0]}
+\lstdefinestyle{consola}
+{basicstyle=\scriptsize\bf\ttfamily,
+backgroundcolor=\color{gray75},
+}
+\lstdefinestyle{PHP}
+{language=PHP,
+}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language spanish
@@ -112,6 +152,18 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Part
+Introducción
+\end_layout
+
+\begin_layout Part
+Alcances
+\end_layout
+
+\begin_layout Part
+Limitaciones
+\end_layout
+
+\begin_layout Part
 Requisitos 
 \end_layout
 
@@ -159,7 +211,7 @@ Base de Datos Postgres Versión 9.1 como mínimo(solo en caso que desee ejecutar
 \end_layout
 
 \begin_layout Part
-Instalación
+Proceso de Instalación
 \end_layout
 
 \begin_layout Section*
@@ -179,13 +231,52 @@ https://github.com/claudioac/Planificacion-Clase-a-Clase
 
 \end_inset
 
- esto mostrata la diguiente ventana.
+ esto mostrará la siguiente ventana.
 \end_layout
 
 \begin_layout Standard
-AHora usted tiene dos formas de descargar nuestra aplicacion una es descargar
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ImagenesManualUsuario/descarga de protecto.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora usted tiene dos formas de descargar nuestra aplicación una es descargar
  desde un zip.
- para ello usted en la misma pagina debe clickear el boton 
+ para ello usted en la misma pagina debe clickear el botón 
 \begin_inset Quotes eld
 \end_inset
 
@@ -198,6 +289,7 @@ Download Zip
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -246,6 +338,7 @@ una vez descargado el programa se debe descomprimir la carpeta en el directorio
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -258,10 +351,11 @@ status open
 \align center
 \begin_inset Graphics
 	filename ImagenesManualUsuario/InstalandoenWWW.png
+	scale 50
 
 \end_inset
 
-
+
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -273,13 +367,14 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Otra forma de instalación es utilizando git para clonar la carpeta directamente
+ a /var/www para ello en la 
 \end_layout
 
 \begin_layout Standard
@@ -327,6 +422,7 @@ database.php
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -427,6 +523,14 @@ $db['default']['port'] = numero del puerto de la base de datos;
 \end_inset
 
 
+\end_layout
+
+\begin_layout Part
+Preguntas Frecuentes
+\end_layout
+
+\begin_layout Part
+Errores Comunes
 \end_layout
 
 \end_body
