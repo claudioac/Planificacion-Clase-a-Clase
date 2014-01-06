@@ -139,6 +139,764 @@ a, para así poder llevar un registro de todos los contenidos que se deben
 Manual De Usuario
 \end_layout
 
+\begin_layout Chapter
+Manual De Usuario
+\end_layout
+
+\begin_layout Standard
+En el inicio de la página aparece el Portal de Planificación Clase a Clase.
+\end_layout
+
+\begin_layout Enumerate
+En la parte inferior de la pagina hay dos botones , el primero de inicio
+ de sesión nos permite ingresar al sistema, el segundo “buscar planificacion
+ ”nos permite ingresar a otra sección de la página en la que se llenan datos
+ para encontrar la planificacion que buscamos.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado1,1.png
+	scale 50
+	rotateOrigin centerBottom
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+Inicio de pagina
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Si presionamos el boton inicio nos da la opción de ingresar en la casilla
+ de usuario ( rut ) y la contraseña ,luego de ingresados los datos ,presionamos
+ salir o ingresar según lo que el usuario requiera .
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado1,2.png
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+portal de ingreso de usuario
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Si presionamos buscar planificación se desplegara la página de Planificacion
+ Clase a Clase en donde los datos a llenar son los siguientes ; código de
+ carrera ,código de asignatura , semestre , nombre del profesor y sus apellidos.
+ Para continuar hay que presionar buscar para que sea encontrada la informacion
+ o inicio si queremos volver al principio .
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado1,3.png
+	scale 60
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+busacador de planificacion de clase a clase
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+En cambio si presionamos iniciar sesión , llenamos los datos y pinchamos
+ ingresar , se desplegara la pagina en donde en la parte superior de la
+ pantalla hay diversos iconos que nos dan las siguientes opciones .
+\end_layout
+
+\begin_layout Enumerate
+- Home : nos da la bienvenida a la planificacion clase clase.
+\end_layout
+
+\begin_layout Enumerate
+-Crear : al presionar esta opcion se despliegan los datos generales Esta
+ parte de la pagina se divide en dos , al costado izquierdo hay campos para
+ eleEgir la opcion que buscamos , son las siguientes :
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado2,1.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Crear
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado2,3.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Datos generales
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Facultad: en este icono se elige la facultad a la cual pertenece el docente,
+ por ejemplo Administracion y Economia 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado 2,4.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Facultad
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Departamento: Entrega la opción , según la facultad que se ha ingresado
+ , del departamento al cual pertenece el docente 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado2,5.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Departamento
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Escuela : nos da la opcion , siguiendo la secuencia anterior, de la escuela
+ a la que el docente pertenece 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado2,6.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Escuela
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Carre En este icono se puede elegir la carrera a la que pertenece
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado 2,7.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Carrera
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Asignatura: Nos da la opcion de ingresar a la asignatura que le pertenece
+ 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado2,8.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Asignatura
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Profesor encargado: Aqui se ingresa el rut del docente 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado2,9.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Profesor Encargado
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Fecha: Aquí se coloca la fecha de la planificación de las clases 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado2,10.png
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado2,11.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+Fecha
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Semestre: Aqui se elige el semestre que se esta planificando
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado2,12.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Semestre
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En el costado derecho hay dos ventanas de gran tamaño las cuales se pueden
+ llenar con los objetivos y luego la estrategia .Una vez realizada la tarea
+ de llenar con los datos adecuados los campos antes mencionamos podemos
+ presionar cancelar o enviar según lo que se necesite.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado3,1.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Objetivo de clase a clase
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado63,2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Etrategia de clase
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado3,3.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+botones de Cancela y Enviar
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+-Planificaciones: aparece un icono para ingresar el rut del docente solicitado
+ y presionando enviar se mostraran las planificaciones que éste tiene registrada
+s en el sistema .
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado4.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+Planificacion del docente
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+-Eliminar: se ingresa el rut del docente al que se quiere eliminar del sistema
+ , presionando enviar se confirma la operación .
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado5.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Eliminar docente
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Cerrar Sesión : al presionar este icono se finaliza la sesion del usuario
+ en el sistema vuelve a la pagina de inicio.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado7.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Cerrar Sesión
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
 Preguntas Frecuentes
 \end_layout
