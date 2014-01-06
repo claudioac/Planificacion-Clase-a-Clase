@@ -149,9 +149,9 @@ En el inicio de la página aparece el Portal de Planificación Clase a Clase.
 
 \begin_layout Enumerate
 En la parte inferior de la pagina hay dos botones , el primero de inicio
- de sesión nos permite ingresar al sistema, el segundo “buscar planificacion
+ de sesión nos permite ingresar al sistema, el segundo “buscar planificación
  ”nos permite ingresar a otra sección de la página en la que se llenan datos
- para encontrar la planificacion que buscamos.
+ para encontrar la planificación que buscamos.
 \begin_inset Float figure
 placement H
 wide false
@@ -235,10 +235,10 @@ portal de ingreso de usuario
 \end_layout
 
 \begin_layout Itemize
-Si presionamos buscar planificación se desplegara la página de Planificacion
+Si presionamos buscar planificación se desplegara la página de Planificación
  Clase a Clase en donde los datos a llenar son los siguientes ; código de
  carrera ,código de asignatura , semestre , nombre del profesor y sus apellidos.
- Para continuar hay que presionar buscar para que sea encontrada la informacion
+ Para continuar hay que presionar buscar para que sea encontrada la información
  o inicio si queremos volver al principio .
 \begin_inset Float figure
 placement H
@@ -268,7 +268,7 @@ status open
 \begin_layout Plain Layout
 
 \lang english
-busacador de planificacion de clase a clase
+buscador de planificacion de clase a clase
 \end_layout
 
 \end_inset
@@ -288,13 +288,13 @@ En cambio si presionamos iniciar sesión , llenamos los datos y pinchamos
 \end_layout
 
 \begin_layout Enumerate
-- Home : nos da la bienvenida a la planificacion clase clase.
+- Home : nos da la bienvenida a la planificación clase clase.
 \end_layout
 
 \begin_layout Enumerate
--Crear : al presionar esta opcion se despliegan los datos generales Esta
+-Crear : al presionar esta opción se despliegan los datos generales Esta
  parte de la pagina se divide en dos , al costado izquierdo hay campos para
- eleEgir la opcion que buscamos , son las siguientes :
+ elegir la opción que buscamos , son las siguientes :
 \begin_inset Float figure
 placement H
 wide false
@@ -516,7 +516,7 @@ Carrera
 \end_layout
 
 \begin_layout Itemize
-Asignatura: Nos da la opcion de ingresar a la asignatura que le pertenece
+Asignatura: Nos da la opción de ingresar a la asignatura que le pertenece
  
 \begin_inset Float figure
 placement H
@@ -554,7 +554,7 @@ Asignatura
 \end_layout
 
 \begin_layout Itemize
-Profesor encargado: Aqui se ingresa el rut del docente 
+Profesor encargado: Aquí se ingresa el rut del docente 
 \begin_inset Float figure
 placement H
 wide false
@@ -638,7 +638,7 @@ Fecha
 \end_layout
 
 \begin_layout Itemize
-Semestre: Aqui se elige el semestre que se esta planificando
+Semestre: Aquí se elige el semestre que se esta planificando
 \begin_inset Float figure
 placement H
 wide false
@@ -734,7 +734,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Etrategia de clase
+Estrategia de clase
 \end_layout
 
 \end_inset
@@ -860,7 +860,7 @@ Eliminar docente
 \end_layout
 
 \begin_layout Enumerate
-Cerrar Sesión : al presionar este icono se finaliza la sesion del usuario
+Cerrar Sesión : al presionar este icono se finaliza la sesión del usuario
  en el sistema vuelve a la pagina de inicio.
 \begin_inset Float figure
 placement H
