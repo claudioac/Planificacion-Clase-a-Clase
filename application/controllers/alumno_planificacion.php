@@ -19,7 +19,7 @@ class Alumno_planificacion extends CI_Controller {
         if($this->input->post())
         {
             $this->form_validation->set_rules('codigo_carrera','Codigo de Carrera', 'required|integer|exact_lenght[5]');
-            $this->form_validation->set_rules('codigo_asignatura','Codigo de Asignatura','required');
+            $this->form_validation->set_rules('codigo_asignatura','Codigo de Asignatura','required|trim');
             $this->form_validation->set_rules('semestre', 'Semestre','required');
             $this->form_validation->set_rules('nombre_profesor','Nombre Profesor', 'required|alpha');
             $this->form_validation->set_rules('apellidos_profesor','Apellidos Profesor', 'required|trim');
@@ -35,8 +35,8 @@ class Alumno_planificacion extends CI_Controller {
                     'carrera' => $this->input->post('codigo_carrera',TRUE),
                     'asignatura' => $this->input->post('codigo_asignatura',TRUE),
                     'semestre' => $this->input->post('semestre',TRUE),
-                    'nombre' => $this->input->post('nombre_profesor',TRUE),
-                    'apellidos' => $this->input->post('apellidos_profesor',TRUE),
+                    'nombre' => strtoupper($this->input->post('nombre_profesor',TRUE)),
+                    'apellidos' => strtoupper($this->input->post('apellidos_profesor',TRUE)),
                     );
                 
                 $query = $this->alumno_model->getPlanificacion($data);
@@ -48,7 +48,7 @@ class Alumno_planificacion extends CI_Controller {
                     else
                     {
                         
-                        $this->session->set_flashdata('ControllerMessage','Los datos Ingresados son incorrectos, Asegure que el Nombre y Apellidos no sea todo en minúsculas. Inténtelo nuevamente por favor.');
+                        $this->session->set_flashdata('ControllerMessage','Los datos Ingresados son incorrectos. Inténtelo nuevamente por favor.');
                         redirect('index.php/alumno_planificacion');
                         
                     }
