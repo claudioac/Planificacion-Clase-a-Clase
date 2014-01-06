@@ -964,7 +964,6 @@ Planificación
 Una vez ingresado el rut del docente, se despliega la pagina de planificaciones
  , en donde se pueden encontrar los siguientes iconos:
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -973,7 +972,6 @@ status open
 \align center
 \begin_inset Graphics
 	filename Imagenes/planificacion 1.png
-	scale 50
 
 \end_inset
 
@@ -1001,7 +999,6 @@ Pagina de planificación
 Código: se refiere el código con el cual se tiene registrado al docente
  en el sistema
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1036,7 +1033,6 @@ Codigo
 \begin_layout Itemize
 Rut: aparece el rut del docente consultado
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1072,7 +1068,6 @@ RUT
 Asignatura: aparece el código de la asignatura en la que se tiene registrado
  al docente
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1107,7 +1102,6 @@ Asignatura
 \begin_layout Itemize
 Fecha: la fecha de ingreso del documento al sistema
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1142,7 +1136,6 @@ Fecha
 \begin_layout Itemize
 Semestre: aparece el semestre que se esta cursando
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1177,7 +1170,6 @@ Semestre
 \begin_layout Itemize
 Contenido: aparece la información del documento
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1212,7 +1204,6 @@ Contenido
 \begin_layout Itemize
 Editar: permite realizar modificaciones en el contenido
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1249,7 +1240,6 @@ Descargar: permite bajar una copia de la información ubicada en el contenido,
  en la que presionando este botón el sistema nos preguntara si deseamos
  descargar esta planificación
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1280,7 +1270,6 @@ Descargar
 
 
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1324,10 +1313,9 @@ Agregar Contenido
 \end_layout
 
 \begin_layout Standard
-Al presionar el botón de comentarios , aparece “Agregar Contenido” , en
+Al presionar el boton de comentarios , aparece “Agregar Contenido” , en
  el cual se despliegan las siguientes opciones de llenado :
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1361,7 +1349,6 @@ Contenido
 
 \begin_layout Standard
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1370,7 +1357,6 @@ status open
 \align center
 \begin_inset Graphics
 	filename Imagenes/planificacion 2.png
-	scale 60
 
 \end_inset
 
@@ -1398,7 +1384,6 @@ Agregar Contenido
 Unidad: Se refiere a la unidad que se esta cursando en el contenido de la
  materia 
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1434,7 +1419,6 @@ Unidad
 Semana Anual: corresponde a la fecha de la semana que se esta cursando a
  nivel del año
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1470,7 +1454,6 @@ Semestre Anual
 Semana Semestral: corresponde a la fecha de la semana que se esta cursando
  a nivel de semestre
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1506,7 +1489,6 @@ Semana Semestral
 Fecha de inicio: corresponde a la fecha de inicio del periodo de la materia
  cursada 
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1542,7 +1524,6 @@ Fecha de Inicio
 Fecha de termino: corresponde a la fecha de termino del periodo de la materia
  cursada
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1583,7 +1564,6 @@ En el costado derecho de la pagina se encuentran tres recuadros de gran
  Finalmente tenemos dos botones , ya sea para cancelar lo ingresado o enviar
  la información 
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1625,7 +1605,6 @@ En Editar Planificación se encuentran los siguientes iconos para ser llenados:
 
 \begin_layout Standard
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1659,7 +1638,6 @@ Editar
 
 \begin_layout Standard
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1668,7 +1646,6 @@ status open
 \align center
 \begin_inset Graphics
 	filename Imagenes/planificacion 3.png
-	scale 60
 
 \end_inset
 
@@ -1695,7 +1672,6 @@ Pantalla de Edición de Planificación
 \begin_layout Itemize
 Facultad: en donde se ingresa la facultad a la cual el docente pertenece
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1731,7 +1707,6 @@ Facultad
 Departamento: Se indica el departamento al cual corresponde la facultad
  del docente 
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1766,7 +1741,6 @@ Departamento
 \begin_layout Itemize
 Escuela: corresponde a la escuela a la que esta asignada el docente 
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1801,7 +1775,6 @@ Escuela
 \begin_layout Itemize
 Carrera: corresponde a la carrera en la que el docente imparte clases
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1836,7 +1809,6 @@ Carrera
 \begin_layout Itemize
 Asignatura: corresponde a la asignatura en la que se desempeña el docente
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1871,7 +1843,6 @@ Asignatura
 \begin_layout Itemize
 Profesor encargado: el nombre del docente 
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1906,7 +1877,6 @@ Profesor encargado
 \begin_layout Itemize
 Fecha: la fecha correspondiente
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1941,7 +1911,6 @@ Fecha
 \begin_layout Itemize
 Semestre: corresponde al semestre cursado
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1980,7 +1949,6 @@ En la parte superior derecha de la pagina se encuentran dos ventanas de
  botones , el primero para cancelar la información y el segundo para la
  actualización de la información 
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -1989,7 +1957,6 @@ status open
 \align center
 \begin_inset Graphics
 	filename Imagenes/planificacion3.9.png
-	scale 60
 
 \end_inset
 
@@ -2020,7 +1987,6 @@ Agregar Contenido
 \begin_layout Standard
 En la pagina de eliminar encontraremos los siguientes iconos:
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -2029,7 +1995,6 @@ status open
 \align center
 \begin_inset Graphics
 	filename Imagenes/eliminar 4,1.png
-	scale 60
 
 \end_inset
 
@@ -2057,7 +2022,6 @@ Eliminar
 Código: que nos muestra el código con que la información esta ingresada
  al sistema
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -2092,7 +2056,6 @@ Código
 \begin_layout Itemize
 Rut: corresponde al rut del docente 
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -2128,7 +2091,6 @@ Rut
 Asignatura: corresponde al código de la asignatura que imparte el docente
  
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -2163,7 +2125,6 @@ Asignatura
 \begin_layout Itemize
 Fecha: corresponde a la fecha en que el documento ingreso al sistema
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -2198,7 +2159,6 @@ Fecha
 \begin_layout Itemize
 Semestre: corresponde al semestre de curso de la información 
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -2233,7 +2193,6 @@ Semestre
 \begin_layout Itemize
 Eliminar: nos permite eliminar la información grabada en el sistema
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -2270,7 +2229,6 @@ Finalmente aparece un botón que dice eliminar con el cual se puede borrar
  toda la información antes mencionada , al presionarlo el sistema nos preguntara
  si desea eliminar la Planificación del docente
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -2304,7 +2262,6 @@ Eliminar
 
 \begin_layout Standard
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
