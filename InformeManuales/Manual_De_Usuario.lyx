@@ -163,7 +163,7 @@ status open
 
 \lang english
 \begin_inset Graphics
-	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado1,1.png
+	filename Imagenes/Manual De Usuario/pegado1,1.png
 	scale 50
 	rotateOrigin centerBottom
 
@@ -206,7 +206,7 @@ status open
 
 \lang english
 \begin_inset Graphics
-	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado1,2.png
+	filename Imagenes/Manual De Usuario/pegado1,2.png
 	scale 50
 	rotateOrigin center
 
@@ -234,6 +234,22 @@ portal de ingreso de usuario
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 Si presionamos buscar planificación se desplegara la página de Planificación
  Clase a Clase en donde los datos a llenar son los siguientes ; código de
@@ -251,7 +267,7 @@ status open
 
 \lang english
 \begin_inset Graphics
-	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado1,3.png
+	filename Imagenes/Manual De Usuario/pegado1,3.png
 	scale 60
 	clip
 
@@ -289,6 +305,20 @@ En cambio si presionamos iniciar sesión , llenamos los datos y pinchamos
 
 \begin_layout Enumerate
 - Home : nos da la bienvenida a la planificación clase clase.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -306,7 +336,7 @@ status open
 
 \lang english
 \begin_inset Graphics
-	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado2,1.png
+	filename Imagenes/Manual De Usuario/pegado2,1.png
 
 \end_inset
 
@@ -339,7 +369,7 @@ status open
 
 \lang english
 \begin_inset Graphics
-	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado2,3.png
+	filename Imagenes/Manual De Usuario/pegado2,3.png
 	scale 60
 
 \end_inset
@@ -378,7 +408,7 @@ status open
 
 \lang english
 \begin_inset Graphics
-	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado 2,4.png
+	filename Imagenes/Manual De Usuario/pegado 2,4.png
 
 \end_inset
 
@@ -416,7 +446,7 @@ status open
 
 \lang english
 \begin_inset Graphics
-	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado2,5.png
+	filename Imagenes/Manual De Usuario/pegado2,5.png
 
 \end_inset
 
@@ -441,7 +471,7 @@ Departamento
 \end_layout
 
 \begin_layout Itemize
-Escuela : nos da la opcion , siguiendo la secuencia anterior, de la escuela
+Escuela : nos da la opción , siguiendo la secuencia anterior, de la escuela
  a la que el docente pertenece 
 \begin_inset Float figure
 placement H
@@ -454,7 +484,7 @@ status open
 
 \lang english
 \begin_inset Graphics
-	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado2,6.png
+	filename Imagenes/Manual De Usuario/pegado2,6.png
 
 \end_inset
 
@@ -491,7 +521,7 @@ status open
 
 \lang english
 \begin_inset Graphics
-	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado 2,7.png
+	filename Imagenes/Manual De Usuario/pegado 2,7.png
 
 \end_inset
 
@@ -529,7 +559,7 @@ status open
 
 \lang english
 \begin_inset Graphics
-	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado2,8.png
+	filename Imagenes/Manual De Usuario/pegado2,8.png
 
 \end_inset
 
@@ -566,7 +596,7 @@ status open
 
 \lang english
 \begin_inset Graphics
-	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado2,9.png
+	filename Imagenes/Manual De Usuario/pegado2,9.png
 
 \end_inset
 
@@ -603,13 +633,13 @@ status open
 
 \lang english
 \begin_inset Graphics
-	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado2,10.png
+	filename Imagenes/Manual De Usuario/pegado2,10.png
 
 \end_inset
 
 
 \begin_inset Graphics
-	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado2,11.png
+	filename Imagenes/Manual De Usuario/pegado2,11.png
 
 \end_inset
 
@@ -650,7 +680,7 @@ status open
 
 \lang english
 \begin_inset Graphics
-	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado2,12.png
+	filename Imagenes/Manual De Usuario/pegado2,12.png
 
 \end_inset
 
@@ -690,7 +720,7 @@ status open
 
 \lang english
 \begin_inset Graphics
-	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado3,1.png
+	filename Imagenes/Manual De Usuario/pegado3,1.png
 
 \end_inset
 
@@ -723,7 +753,7 @@ status open
 
 \lang english
 \begin_inset Graphics
-	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado63,2.png
+	filename Imagenes/Manual De Usuario/pegado63,2.png
 
 \end_inset
 
@@ -756,7 +786,7 @@ status open
 
 \lang english
 \begin_inset Graphics
-	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado3,3.png
+	filename Imagenes/Manual De Usuario/pegado3,3.png
 
 \end_inset
 
@@ -780,6 +810,22 @@ botones de Cancela y Enviar
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Enumerate
 -Planificaciones: aparece un icono para ingresar el rut del docente solicitado
  y presionando enviar se mostraran las planificaciones que éste tiene registrada
@@ -795,7 +841,7 @@ status open
 
 \lang english
 \begin_inset Graphics
-	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado4.png
+	filename Imagenes/Manual De Usuario/pegado4.png
 
 \end_inset
 
@@ -808,12 +854,25 @@ status open
 \begin_layout Plain Layout
 
 \lang english
-Planificacion del docente
+Planificación del docente
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
 \end_layout
 
 \end_inset
@@ -835,7 +894,7 @@ status open
 
 \lang english
 \begin_inset Graphics
-	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado5.png
+	filename Imagenes/Manual De Usuario/pegado5.png
 
 \end_inset
 
@@ -873,7 +932,7 @@ status open
 
 \lang english
 \begin_inset Graphics
-	filename /home/slenderman/Escritorio/InformeManuales (2)/Imagenes/Manual De Usuario/pegado7.png
+	filename Imagenes/Manual De Usuario/pegado7.png
 
 \end_inset
 
