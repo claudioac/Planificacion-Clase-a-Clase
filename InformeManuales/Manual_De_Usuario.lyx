@@ -881,8 +881,9 @@ newpage
 \end_layout
 
 \begin_layout Enumerate
--Eliminar: se ingresa el rut del docente al que se quiere eliminar del sistema
- , presionando enviar se confirma la operación .
+-Eliminar: se ingresa el rut del docente para mostrar la planificaciones
+ que tiene registradas con el fin de poder eliminarlas de una en una si
+ el lo requiere.
 \begin_inset Float figure
 placement H
 wide false
@@ -905,7 +906,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Eliminar docente
+Eliminar Planificaciones Registradas
 \end_layout
 
 \end_inset
@@ -1245,9 +1246,9 @@ Editar
 \end_layout
 
 \begin_layout Itemize
-Descargar: permite bajar una copia de la información ubicada en el contenido,
- en la que presionando este botón el sistema nos preguntara si deseamos
- descargar esta planificación
+Descargar: permite bajar una copia de la información de la planificación
+ completa registrada por el docente, en la que presionando este botón el
+ sistema nos preguntara si deseamos descargar esta planificación
 \begin_inset Float figure
 placement H
 wide false
@@ -1324,8 +1325,10 @@ Agregar Contenido
 \end_layout
 
 \begin_layout Standard
-Al presionar el botón de comentarios , aparece “Agregar Contenido” , en
- el cual se despliegan las siguientes opciones de llenado :
+Al presionar el botón de contenido , aparece una tabla con los contenidos
+ estipulados anteriormente por el docente al momento de crear la planificación
+ y además la función “Agregar Contenido” por si le falto alguno por agregar,
+ en el cual se despliegan las siguientes opciones de llenado :
 \begin_inset Float figure
 placement H
 wide false
@@ -2348,68 +2351,26 @@ Preguntas Frecuentes
 \end_layout
 
 \begin_layout Enumerate
-¿si borro mi planificación, ¿elimino también los contenidos?
+Si borro mi planificación, ¿elimino también los contenidos?
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-R: si al eliminar una planificación también se borran los contenidos asociado
+R: Si al eliminar una planificación también se borran los contenidos asociado
  a la planificación.
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-¿como se imprime una planificación ?
+Como se imprime una planificación 
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-al buscar las planificaciones por su rut al docente se le despliega una
- ventana la cual aparece un listado con todas las planificaciones ingresadas
- por este.
- al final en la parte derecha se encuentra el botón descarga 
-\end_layout
-
-\begin_layout Standard
-como lo muestra la siguiente imagen:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Imagenes/PLANIFICACION.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Descargar planificación 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-lo cual descargara la información de la planificación.
- la cual podrá ser vista en el programa de tipo hoja de calculo como excel
- ser impresa a través de el programa de hoja de calculo
+R: Se tiene dos opciones entrar como docente si posee contraseña o como
+ modo anónimo a través del método de búsqueda que facilita el programa,
+ donde tiene que llenar una serie de registro para que la planificación
+ pueda ser ubicada en el sistema.
 \end_layout
 
 \end_deeper
