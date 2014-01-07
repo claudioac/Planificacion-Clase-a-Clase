@@ -998,7 +998,7 @@ Pagina de planificación
 \end_layout
 
 \begin_layout Itemize
-Código: se refiere el código con el cual se tiene registrado al docente
+Código: se refiere el código con el cual se tiene registrada la planificación
  en el sistema
 \begin_inset Float figure
 placement H
@@ -2347,5 +2347,43 @@ Pregunta si quiere eliminar
 Preguntas Frecuentes
 \end_layout
 
+\begin_layout Enumerate
+si borro mi planificación, ¿elimino también los contenidos?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+resp: si al eliminar una planificación también se borran los contenidos
+ asociado a la planificación.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+como se imprime una planificación 
+\end_layout
+
+\begin_layout Enumerate
+¿si el excel no muestra contenidos a que se debe?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+R: se deba a no se ingreso completamente la planificación o no tiene ningún
+ contenido
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+si pongo buscar planificación y me muestra un error en los datos ingresados
+ a que se debe
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+R: a que realizo incorrectamente el ingreso de datos, verifique si los datos
+ ingresados es concordante con los datos solicitados 
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
