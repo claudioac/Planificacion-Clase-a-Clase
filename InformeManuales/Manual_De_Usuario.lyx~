@@ -2375,61 +2375,6 @@ R: Se tiene dos opciones entrar como docente si posee contraseña o como
 
 \end_deeper
 \begin_layout Enumerate
-¿como se Descargo e imprimo una planificación ?
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-R:Al buscar las planificaciones por su rut al docente se le despliega una
- ventana la cual aparece un listado con todas las planificaciones ingresadas
- por este.
- al final en la parte derecha se encuentra el botón descarga 
-\end_layout
-
-\begin_layout Standard
-como lo muestra la siguiente imagen:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename /var/www/Proyecto/InformeManuales/Imagenes/PLANIFICACION.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Descargar planificación 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-lo cual descargara la información de la planificación.
- la cual podrá ser vista en el programa de tipo hoja de calculo como excel
- ser impresa a través de el programa de hoja de calculo.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
 ¿si el excel no muestra contenidos a que se debe?
 \end_layout
 
