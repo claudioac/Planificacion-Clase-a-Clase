@@ -2348,7 +2348,7 @@ Preguntas Frecuentes
 \end_layout
 
 \begin_layout Enumerate
-si borro mi planificación, ¿elimino también los contenidos?
+¿si borro mi planificación, ¿elimino también los contenidos?
 \end_layout
 
 \begin_deeper
@@ -2359,9 +2359,60 @@ R: si al eliminar una planificación también se borran los contenidos asociado
 
 \end_deeper
 \begin_layout Enumerate
-como se imprime una planificación 
+¿como se imprime una planificación ?
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+al buscar las planificaciones por su rut al docente se le despliega una
+ ventana la cual aparece un listado con todas las planificaciones ingresadas
+ por este.
+ al final en la parte derecha se encuentra el botón descarga 
+\end_layout
+
+\begin_layout Standard
+como lo muestra la siguiente imagen:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/PLANIFICACION.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Descargar planificación 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+lo cual descargara la información de la planificación.
+ la cual podrá ser vista en el programa de tipo hoja de calculo como excel
+ ser impresa a través de el programa de hoja de calculo
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 ¿si el excel no muestra contenidos a que se debe?
 \end_layout
@@ -2402,7 +2453,7 @@ R: una vez enviada la planificación al sistema esta puede ser editada mediante
 
 \begin_deeper
 \begin_layout Standard
-R: Una vez borrada la planificacion esta no puede ser recuperada.
+R: Una vez borrada la planificación esta no puede ser recuperada.
 \end_layout
 
 \end_deeper
