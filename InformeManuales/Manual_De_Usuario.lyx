@@ -2495,5 +2495,16 @@ R: Revise que este ingresando bien los datos solicitados.
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+si el usuario pierde su contraseña o nombre de ususario ¿como la recupera?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+R:se tendra que comunicar con la mesa de ayuda de dirdoc
+\end_layout
+
+\end_deeper
+
 \end_body
 \end_document
