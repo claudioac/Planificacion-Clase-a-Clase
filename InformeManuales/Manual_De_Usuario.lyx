@@ -192,7 +192,7 @@ Inicio de pagina
 \end_layout
 
 \begin_layout Itemize
-Si presionamos el boton inicio nos da la opción de ingresar en la casilla
+Si presionamos el botón inicio nos da la opción de ingresar en la casilla
  de usuario ( rut ) y la contraseña ,luego de ingresados los datos ,presionamos
  salir o ingresar según lo que el usuario requiera .
 \begin_inset Float figure
@@ -1616,7 +1616,7 @@ Objetivo Especifico, Contenido Temático, Evaluación
 \end_layout
 
 \begin_layout Chapter
-Agregar Contenido
+Editar Planificación
 \end_layout
 
 \begin_layout Standard
@@ -2014,7 +2014,7 @@ Objetivo, Estrategia
 \end_layout
 
 \begin_layout Chapter
-Agregar Contenido
+Eliminar Planificación 
 \end_layout
 
 \begin_layout Standard
@@ -2353,8 +2353,8 @@ si borro mi planificación, ¿elimino también los contenidos?
 
 \begin_deeper
 \begin_layout Standard
-resp: si al eliminar una planificación también se borran los contenidos
- asociado a la planificación.
+R: si al eliminar una planificación también se borran los contenidos asociado
+ a la planificación.
 \end_layout
 
 \end_deeper
@@ -2374,7 +2374,7 @@ R: se deba a no se ingreso completamente la planificación o no tiene ningún
 
 \end_deeper
 \begin_layout Enumerate
-si pongo buscar planificación y me muestra un error en los datos ingresados
+si pongo buscar planificación y me muestra un error en los datos ingresados
  a que se debe
 \end_layout
 
@@ -2382,6 +2382,47 @@ si pongo buscar planificación y me muestra un error en los datos ingresados
 \begin_layout Standard
 R: a que realizo incorrectamente el ingreso de datos, verifique si los datos
  ingresados es concordante con los datos solicitados 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+¿Puedo modificar una planificación después de que esta ya fuera enviada?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+R: una vez enviada la planificación al sistema esta puede ser editada mediante
+ la opción edición explicado en el capitulo 6 del presente manual
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+¿Puedo Recuperar Una Planificación que ya ha sido eliminada?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+R: Una vez borrada la planificacion esta no puede ser recuperada.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Al querer iniciar sesión en el sistema este me pide una contraseña.
+ ¿cual es esa contraseña?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+R: la contraseña para iniciar sección es la misma que se utiliza en el sistema
+ 
+\begin_inset Quotes eld
+\end_inset
+
+DIRDOC
+\begin_inset Quotes erd
+\end_inset
+
+ de la Universidad.
 \end_layout
 
 \end_deeper
