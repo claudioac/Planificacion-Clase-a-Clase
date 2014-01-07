@@ -2491,32 +2491,33 @@ no me puedo logear en la pagina
 \begin_deeper
 \begin_layout Standard
 R: Revise que este ingresando bien los datos solicitados.
- si el problema persiste comuniquese con la mesa de ayuda del sistema DIRDOC.
+ si el problema persiste comuníquese con la mesa de ayuda del sistema DIRDOC.
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-Si el usuario pierde su contraseña o nombre de ususario ¿como la recupera?
+Si el usuario pierde su contraseña o nombre de usuario ¿como la recupera?
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-R:Se tendra que comunicar con la mesa de ayuda de dirdoc
+R:Se tendrá que comunicar con la mesa de ayuda de dirdoc
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-Una vez desvinculado un docente ¿al cuanto tiempo se borra la información de su planificación ?
+Una vez desvinculado un docente ¿al cuanto tiempo se borra la información
+ de su planificación ?
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-R:Un docente no puede ser eliminado por el proyecto, si es desvinculado por la instutucion como los datos
-estan en cascada en la base de datos se borrarian automaticamente, pero tiene que hacerce directamente desde 
-la base de datos
+R:Un docente no puede ser eliminado por el proyecto, si es desvinculado
+ por la institución como los datos están en cascada en la base de datos
+ se borrarían automáticamente, pero tiene que hacerse directamente desde
+ la base de datos
 \end_layout
 
 \end_deeper
-
 \end_body
 \end_document

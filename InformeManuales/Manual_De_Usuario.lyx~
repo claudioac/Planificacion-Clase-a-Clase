@@ -2350,6 +2350,10 @@ Pregunta si quiere eliminar
 Preguntas Frecuentes
 \end_layout
 
+\begin_layout Chapter
+F.A.Q
+\end_layout
+
 \begin_layout Enumerate
 Si borro mi planificación, ¿elimino también los contenidos?
 \end_layout
@@ -2358,19 +2362,6 @@ Si borro mi planificación, ¿elimino también los contenidos?
 \begin_layout Standard
 R: Si al eliminar una planificación también se borran los contenidos asociado
  a la planificación.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Como se imprime una planificación 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-R: Se tiene dos opciones entrar como docente si posee contraseña o como
- modo anónimo a través del método de búsqueda que facilita el programa,
- donde tiene que llenar una serie de registro para que la planificación
- pueda ser ubicada en el sistema.
 \end_layout
 
 \end_deeper
@@ -2493,5 +2484,39 @@ DIRDOC
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+no me puedo logear en la pagina 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+R: Revise que este ingresando bien los datos solicitados.
+ si el problema persiste comuniquese con la mesa de ayuda del sistema DIRDOC.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Si el usuario pierde su contraseña o nombre de ususario ¿como la recupera?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+R:Se tendra que comunicar con la mesa de ayuda de dirdoc
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Una vez desvinculado un docente ¿al cuanto tiempo se borra la información de su planificación ?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+R:Un docente no puede ser eliminado por el proyecto, si es desvinculado por la instutucion como los datos
+estan en cascada en la base de datos se borrarian automaticamente, pero tiene que hacerce directamente desde 
+la base de datos
+\end_layout
+
+\end_deeper
+
 \end_body
 \end_document
