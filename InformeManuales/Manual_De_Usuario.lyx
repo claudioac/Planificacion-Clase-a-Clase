@@ -2350,6 +2350,10 @@ Pregunta si quiere eliminar
 Preguntas Frecuentes
 \end_layout
 
+\begin_layout Chapter
+F.A.Q
+\end_layout
+
 \begin_layout Enumerate
 Si borro mi planificación, ¿elimino también los contenidos?
 \end_layout
@@ -2400,7 +2404,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /var/www/Proyecto/InformeManuales/Imagenes/PLANIFICACION.png
+	filename Imagenes/PLANIFICACION.png
 	scale 50
 
 \end_inset
@@ -2430,24 +2434,24 @@ lo cual descargara la información de la planificación.
 
 \end_deeper
 \begin_layout Enumerate
-¿si el excel no muestra contenidos a que se debe?
+¿Si el excel no muestra contenidos a que se debe?
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-R: se deba a no se ingreso completamente la planificación o no tiene ningún
+R: Se deba a no se ingreso completamente la planificación o no tiene ningún
  contenido
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-si pongo buscar planificación y me muestra un error en los datos ingresados
+Si pongo buscar planificación y me muestra un error en los datos ingresados
  a que se debe
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-R: a que realizo incorrectamente el ingreso de datos, verifique si los datos
+R: A que realizo incorrectamente el ingreso de datos, verifique si los datos
  ingresados es concordante con los datos solicitados 
 \end_layout
 
@@ -2458,7 +2462,7 @@ R: a que realizo incorrectamente el ingreso de datos, verifique si los datos
 
 \begin_deeper
 \begin_layout Standard
-R: una vez enviada la planificación al sistema esta puede ser editada mediante
+R: Una vez enviada la planificación al sistema esta puede ser editada mediante
  la opción edición explicado en el capitulo 6 del presente manual
 \end_layout
 
