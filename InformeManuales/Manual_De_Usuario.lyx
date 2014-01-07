@@ -2366,19 +2366,6 @@ R: Si al eliminar una planificación también se borran los contenidos asociado
 
 \end_deeper
 \begin_layout Enumerate
-Como se imprime una planificación 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-R: Se tiene dos opciones entrar como docente si posee contraseña o como
- modo anónimo a través del método de búsqueda que facilita el programa,
- donde tiene que llenar una serie de registro para que la planificación
- pueda ser ubicada en el sistema.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
 ¿como se Descargo e imprimo una planificación ?
 \end_layout
 
@@ -2494,6 +2481,17 @@ DIRDOC
 \end_inset
 
  de la Universidad.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+no me puedo logear en la pagina 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+R: Revise que este ingresando bien los datos solicitados.
+ si el problema persiste comuniquese con la mesa de ayuda del sistema DIRDOC.
 \end_layout
 
 \end_deeper
