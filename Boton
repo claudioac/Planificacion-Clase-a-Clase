@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Boton con doble estado</title>
+    </head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript"> 
+function cambioNombre(){
+   var x
+   x=$('#boton1');
+   x.click(cambioEstado())
+//   $('#boton1').text('Boton2');
+}
+function cambioEstado()
+{
+    var x;
+    x = $('#boton1');
+    if(x.attr("value")==1)
+    {
+        $('#boton1').text('Abrir');
+        x.attr("value","0");
+    }else
+        {
+            $('#boton1').text('Cerrar');
+            x.attr("value","1");
+        }
+        
+}
+</script> 
+    <body>
+        <button id="boton1" onclick="cambioNombre()" value="1">Boton1</button>
+   
+    </body>
+</html>
+
